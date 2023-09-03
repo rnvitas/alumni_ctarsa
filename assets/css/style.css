@@ -74,10 +74,19 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    /* background-color: red; */
+    height: 283.658px;
+    /* background-color:red; */
+    background: #FFF;
     color: white;
     text-align: center;
     
+}
+
+footer .copyright{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 
