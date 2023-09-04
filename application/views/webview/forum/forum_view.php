@@ -47,16 +47,17 @@
             <div class="container-fluid">
                 <div class="col-lg-12 d-flex">
                     <div class="col-lg-9 mt-3">
+
                         <div class="forum-input">
 
-                            <div class="col-lg-12  d-flex justify-content-between">
-                                <div class="col-lg-1 d-flex justify-content-center align-items-center">
+                            <div class="col-lg-12  d-flex justify-content-around">
+                                <div class="col-lg-2 d-flex justify-content-center align-items-center">
                                     <div class="card-profile">
                                         <img class="img-fluid profile-image" src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp">
                                     </div>
                                 </div>
 
-                                <div class="col-lg-9">
+                                <div class="col-lg-8">
                                     <div class="card-forum">
                                         <div class="container-fluid">
                                             <div class="form-group">
@@ -78,7 +79,7 @@
 
                             </div>
 
-                            .
+
 
                         </div>
 
@@ -98,6 +99,24 @@
                                 </div>
 
                             </div>
+
+                            <div class="card-desc-topic">
+                                <div class="container">
+                                    <div class="title-topic">
+                                        <h5>Kemajuan Teknologi Mendukung Pendidikan Indonesia</h5>
+                                    </div>
+
+                                    <div class="desc-topic">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen...</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-action-topic">
+
+                            </div>
                         </div>
 
 
@@ -106,6 +125,9 @@
 
                     <div class="col-lg-3 mt-3 ms-3 mb-5">
                         <div class="card-hot-topic">
+                            <div class="heading ">
+                                <h5>Hot Topics</h5>
+                            </div>
 
                         </div>
                     </div>
