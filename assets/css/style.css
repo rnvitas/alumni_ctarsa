@@ -11,6 +11,8 @@ body{
     font-family: 'Mukta Mahee', sans-serif!important;
 }
 
+
+
 .btn.btn-primary{
     display: inline-flex!important;
     padding: 10px 25px!important;
@@ -42,6 +44,7 @@ body{
 .btn.btn-outline-primary:hover{
     background:var(--hover)!important;
     color:white!important;
+    border:none!important;
 
 }
 
@@ -49,18 +52,26 @@ body{
     max-width:1500px;
     position: static;
     margin:0 auto ;
+    /* padding:1rem 6rem; */
 
 }
 
 
 /* navigation */
 
+.navigation{
+        position: fixed;
+
+    width:100%!important;
+}
+
 .navigation .navbar{
     height: 90px;
     width:100%!important;
     /* width: 1920px; */
     border: 1px solid rgba(255, 255, 255, 0.01);
-    background: rgba(255, 255, 255, 0.80);
+    /* background: rgba(255, 255, 255, 0.80); */
+    background-color: #FFF;
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
     padding:0 auto;
@@ -68,6 +79,27 @@ body{
     font-weight: 500!important;
    
 }
+
+
+@media (min-width:280px) and (max-width:900px){
+
+    .navbar-collapse {
+
+        margin-top: 2rem!important;
+        background: white!important;
+        padding: 30px 25px;
+        border-radius: 20px!important;
+        box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.25)!important;
+      }
+    
+}
+
+
+
+/* navigation */
+
+
+/* footer */
 
 footer{
     position: fixed;
@@ -89,21 +121,111 @@ footer .copyright{
     width: 100%;
 }
 
+.nav-footer .nav-link-footer a{
+    text-decoration: none;
+    color:var(--primary);
+}
+
+.nav-footer .nav-link-footer a:hover{
+    color:var(--hover);
+    cursor: pointer;
+}
+.nav-footer .nav-link-footer{
+    margin-right:2rem;
+}
+
+/* footer */
 
 
-@media (min-width:280px) and (max-width:900px){
+/* header forum */
 
-    .navbar-collapse {
+.forum{
+    width:100%;
+}
+.header-forum {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:350px;
+    background: linear-gradient(99deg, #337CCF -10.35%, #FFC436 111.7%);
 
-        margin-top: 2rem!important;
-        background: white!important;
-        padding: 30px 25px;
-        border-radius: 20px!important;
-        box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.25)!important;
-      }
-    
+}
+
+.header-forum .forum-title{
+    margin-top:3rem;
+}
+
+.subheader-forum{
+   height: 180px;
+   background-color: #FFF;
 }
 
 
+.profile-picture .profile-image{
+    border-radius:100%;
+    width:180px;
+    height:180px;
+    object-fit: contain;
+    position: absolute;
+    margin-top:-5rem;
+   margin-left:5rem;
+}
 
-/* navigation */
+.profile-info{
+    margin-left:5rem;
+    padding-top: 7rem;
+}
+.profile-info h6{
+    color:var(--primary)!important;
+    position: absolute;
+    
+}
+
+.profile-info p{
+    color:var(--light-grey);
+    margin-top: 1.5rem;
+}
+
+.forum-input{
+    width: 100%;
+    height: 146px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+    box-sizing: content-box;
+}
+
+.card-profile .profile-image{
+    border-radius:100%;
+    width:82px;
+    height:82px;
+    object-fit: contain;
+    margin:30px 38px;
+    /* position: absolute;
+    margin-top:-5rem;
+   margin-left:5rem; */
+}
+
+.card-forum{
+    margin:30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group .form-control{
+    width:100%;
+
+}
+
+.card-hot-topic{
+  border-radius: 15px;
+background: #FFF;  
+height: 564px;
+width:auto;
+box-sizing: content-box;
+
+}
+
+/* header forum */
