@@ -45,51 +45,74 @@
     <div class="body-forum">
         <div class="wrapper-body">
             <div class="container-fluid">
-                <div class="d-flex">
-                    <div class="col-lg-12 d-flex">
-                        <div class="col-lg-9 mt-3">
-                            <div class="forum-input">
+                <div class="col-lg-12 d-flex">
+                    <div class="col-lg-9 mt-3">
+                        <div class="forum-input">
 
-                                <div class="col-lg-12  d-flex justify-content-between">
-                                    <div class="col-lg-2">
-                                        <div class="card-profile">
-                                            <img class="img-fluid profile-image" src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp">
-                                        </div>
+                            <div class="col-lg-12  d-flex justify-content-between">
+                                <div class="col-lg-1 d-flex justify-content-center align-items-center">
+                                    <div class="card-profile">
+                                        <img class="img-fluid profile-image" src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp">
                                     </div>
+                                </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="card-forum">
+                                <div class="col-lg-9">
+                                    <div class="card-forum">
+                                        <div class="container-fluid">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" placeholder="Add Topic for forum..">
                                             </div>
-
                                         </div>
-                                    </div>
 
-                                    <div class="col-lg-4">
-                                        <div class="card-forum">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-2  d-flex justify-content-center align-items-center">
+                                    <div class="card-forum ">
+                                        <div class="d-flex justify-content-center align-items-center btn-topic">
                                             <button class="btn btn-primary">Add Topic</button>
                                         </div>
                                     </div>
-
-
                                 </div>
 
-                                .
+
+                            </div>
+
+                            .
+
+                        </div>
+
+
+                        <div class="filter-forum">
+                            <button class="btn btn-primary me-3">All</button>
+                            <button class="btn btn-outline-primary me-3">Newst</button>
+
+                        </div>
+
+                        <div class="card-topic">
+                            <div class="card-topic-profile ">
+                                <img class="img-fluid topic-profile" src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp">
+                                <div class="info-profile">
+                                    <h6>Angelina Christine</h6>
+                                    <p>Alumni 2015</p>
+                                </div>
 
                             </div>
                         </div>
 
 
-                        <div class="col-lg-3 mt-3 ms-3 mb-5">
-                            <div class="card-hot-topic">
+                    </div>
 
-                            </div>
+
+                    <div class="col-lg-3 mt-3 ms-3 mb-5">
+                        <div class="card-hot-topic">
+
                         </div>
                     </div>
                 </div>
-
             </div>
+
+
         </div>
     </div>
 </div>

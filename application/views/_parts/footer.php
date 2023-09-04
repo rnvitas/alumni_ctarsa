@@ -25,11 +25,16 @@
 
 
             </div>
-            <div class="col-lg-12 copyright d-flex justify-content-center" style="background:#e9e9e9; height: 50px;">
-                <div class="d-flex align-items-center">
-                    <h6 style="color:#9A8743;" class="text-center">Copyright © 2023 Ikatan Alumni SMAU CTARSA. All rights reserved. Design by Apa Hayo</h6>
-
-                </div>
-            </div>
         </div>
+
+    </div>
+    <!-- <div class="container-fluid"> -->
+    <div class="col-lg-12 copyright d-flex justify-content-center mt-10" style="">
+
+        <div class="d-flex align-items-center">
+            <h6 style="color:#9A8743;" class="text-center">Copyright © 2023 Ikatan Alumni SMAU CTARSA. All rights reserved. Design by Apa Hayo</h6>
+
+        </div>
+        <!-- </div> -->
+    </div>
 </footer>
