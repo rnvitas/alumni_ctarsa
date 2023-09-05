@@ -376,7 +376,8 @@ color:var(--primary);
 .card-hot-topic .heading{
     color:#000000;
     font-weight: 800;
-    padding:2rem 2rem;
+    padding-top: 1.5rem;
+    padding-left:2rem;
     
 }
 
@@ -389,6 +390,34 @@ color:var(--primary);
   /* box-sizing: content-box; */
   
   }
+
+
+  .title-hot-topic a{
+    text-decoration: none;
+}
+
+.title-hot-topic p{
+color:var(--light-grey);    
+}
+
+.card-hot-topic .title-hot-topic h6{
+color:var(--light-grey);
+}
+
+.card-hot-topic .title-hot-topic{
+    padding-top: 1.5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+
+}
+
+.card-hot-topic .title-hot-topic h6:hover{
+    color:var(--hover);
+    cursor: pointer;
+}
+
+
+
 
   /* .card-forum-topic{
     overflow-y:scroll;
@@ -407,7 +436,36 @@ color:var(--primary);
 .card-information .heading{
      color:#000000;
     font-weight: 800;
-    padding:2rem 2rem;
+    /* padding:2rem 2rem; */
+    padding-top: 1.5rem;
+    padding-left:2rem;
+
+}
+
+.card-information .title-information h6{
+   
+    color:var(--primary);
+    /* text-decoration: none;; */
+}
+
+.title-information a{
+    text-decoration: none;
+}
+
+.title-information p{
+color:var(--light-grey);    
+}
+
+.card-information .title-information{
+    padding-top: 1.5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+
+}
+
+.card-information .title-information h6:hover{
+    color:var(--hover);
+    cursor: pointer;
 }
 
 /* header forum */
