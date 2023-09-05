@@ -268,11 +268,11 @@ width:auto;
     /* margin-top: rem; */
 }
 
-/* .card-topic-profile{
+.card-topic-profile{
     display: flex;
-    justify-content: start;
+    justify-content:start;
 
-} */
+}
 
 .card-topic-profile .topic-profile{
     border-radius:100%;
