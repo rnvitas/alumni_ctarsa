@@ -50,7 +50,7 @@
 
                     <div class="forum-input">
 
-                        <div class="col-lg-12  d-flex justify-content-around">
+                        <div class="col-lg-12  d-flex justify-content-around wrappper-form-input">
                             <div class="col-lg-2 d-flex justify-content-center align-items-center">
                                 <div class="card-profile">
                                     <img class="img-fluid profile-image" src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp">
