@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+/* Fonts */
+body {
+  font-family: 'Mukta', sans-serif;
+  background-color: #F3F3F3;
+}
+
+/* Colors */
+:root {
+  --color-default: #222222;
+  --color-primary: #CB9224;
+  --color-secondary: #fff;
+  --color-third: #9a8743;
+}
+
+    /*--------------------------------------------------------------
+# information card
+--------------------------------------------------------------*/
+    .informationdetails .card {
+      width: auto;
+      height: auto;
+      margin: 40px;
+      padding: 40px;
+      background-color: var(--color-secondary);
+      border-radius: 30px;
+    }
+
+    .blogimg {
+      width: 90%;
+      height: 400px;
+    }
+
+    .informationcard .card .card-title {
+      border-radius: 30px;
+      background: rgba(203, 146, 36, 0.1);
+      color: var(--color-primary);
+      width: 60px;
+      height: auto;
+      font-size: 15px;
+      padding-left: 13px;
+    }
+
+    .section-title h2 {
+      color: var(--color-primary);
+      font-weight: bold;
+    }
+
+    .informationcard .card h4 {
+      color: var(--color-primary);
+      font-size: 30px;
+    }
+
+    .informationcard .card-date {
+      font-size: 20px;
+    }
+
+    .desctext {
+      margin-top: 2%;
+    }
+
+    .informationdetails .card .card-title{
+    border-radius: 30px;
+  background: rgba(203, 146, 36, 0.10);
+  color: var(--color-primary);
+  width:50px;
+  height: auto;
+  font-size: 15px;
+  padding-left: 13px;
+  }
+
+  .card .card-judul{
+    color: var(--color-primary);
+    font-weight: 20px;
+  }
+
+  .card-date{
+    color: rgba(0, 0, 0, 0.50);
+  }
+
+    /*--------------------------------------------------------------
+# blogdetails
+--------------------------------------------------------------*/
+.carousel-inner {
+    padding-top: 2em;
+    padding-bottom: 7em;
+    display: flex;
+    /* Add flex display for the carousel items */
+    gap: 1em;
+    /* Adjust the gap between cards */
+    align-items: center;
+  }
+  
+  .carousel-item .card {
+    margin-right: 0px;
+  }
+  
+  .carousel-item{
+    padding: auto;
+  }
+  .carousel-inner .carousel-item .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 30px;
+    width: 40vh;
+    height: auto;
+  }
+  
+  .carousel-control-prevv,
+  .carousel-control-nextt {
+    border-radius: 50%;
+    border: 1px;
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  .informationbtn{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    
+  }
+  
+  .informationbtn .bi-caret-right{
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    margin: 5px;
+    font-size: 15px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+  }
+  
+  .bi-caret-right,
+  .bi-caret-left{
+    color: var(--color-secondary);
+    width: 30px;
+  }
+  
+  
+  
+  
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      display: block;
+    }
+  
+    .carousel-inner {
+      display: flex;
+  
+    }
+  }
+  
+  .card img {
+    max-height: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+  
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }
+  
+  .blogdetails {
+    border: none;
+    margin-top: 5%;
+    overflow: hidden;
+    
+  }
+  
+  
+  .card-body .card-title h5 {
+    font-size: 20px;
+  }
+  
+  .card-body p {
+    font-size: 10px;
+  }
+  
+  .blogtext {
+    padding-left: 20px;
+    padding-top: 10vh;
+  }
+  
+  .blogtext p {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .blogtext h3 {
+    font-weight: bold;
+  }
+  
+  .card .card-text {
+    color: var(--color-primary);
+    font-size: 15px;
+  }
+
+  .card .card-title {
+    font-size: 15px;
+    color: var(--color-primary);
+  }
+  
+  .seemore p {
+    font-size: 15px;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.50);
+  }
+  
+  
+  .card .card-title1{
+    border-radius: 30px;
+  background: rgba(203, 146, 36, 0.10);
+  color: var(--color-primary);
+  width:60px;
+  height: auto;
+  font-size: 15px;
+  padding-left: 13px;
+  }
+
+  .backbtn{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 30px;
+    width: 140px;
+    height: 50px;
+    bottom: 90px;
+    position: relative;
+    
+  }
+  
+  .backbtn .bi-arrow-left{
+    margin: 5px;
+  }
+  

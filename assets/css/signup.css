@@ -1,0 +1,175 @@
+body {
+    font-family: "Karla", sans-serif;
+
+  }
+
+  main{
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
+    
+    background-size: cover;
+  }
+  .card{
+    border-radius: 30px;
+    border: none;
+    width: 1000px;
+    height: 665px;
+  }
+  .login {
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .brand-wrapper {
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+   /* Vertically align items */
+    justify-content: space-between;
+   /* Mengaligner item secara horizontal dan memberi ruang di antara */
+  }
+
+  .input-group-text{
+    height: 40px;
+    border-radius: 30px;
+  }
+  .brand-wrapper .logo {
+    height: 37px;
+  }
+  .loginbtn1 {
+    left: 20px;
+    margin-left: 30px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    width: 80px;
+    height: 45px;
+    border-radius: 100px;
+    padding: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #cb9224;
+    align-items: center;
+  }
+  .akun p {
+    align-items: center;
+  }
+  .loginbtn2 {
+    left: 20px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    width: 85px;
+    height: 45px;
+    border-radius: 100px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+    border: 2px solid #cb9224;
+  }
+  .loginbtn2 p {
+    margin-left: 12px;
+  }
+  .login-card-footer-text {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .forgot-password-link {
+    margin-left: 15%;
+  }
+  .fo .login-card {
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    overflow: hidden;
+    width: auto;
+    height: 650px;
+  }
+  .login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  .login-card .card-body {
+    padding: 20px 60px 60px;
+  }
+  @media (max-width: 422px) {
+    .login-card .card-body {
+      padding: 35px 24px;
+   }
+  }
+  .login-card-description {
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 23px;
+  }
+  .login-card form {
+    max-width: 326px;
+  }
+  .login-card .form-control {
+    border: 1px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal;
+    border-radius: 30px;
+  }
+
+  .login-card .form-control::-webkit-input-placeholder {
+    color: #919aa3;
+  }
+  .login-card .form-control::-moz-placeholder {
+    color: #919aa3;
+  }
+  .login-card .form-control:-ms-input-placeholder {
+    color: #919aa3;
+  }
+  .login-card .form-control::-ms-input-placeholder {
+    color: #919aa3;
+  }
+  .login-card .form-control::placeholder {
+    color: #919aa3;
+  }
+  .login-card .login-btn:hover {
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+  }
+  .login-card .forgot-password-link {
+    font-size: 14px;
+    color: #919aa3;
+    margin-bottom: 12px;
+  }
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    .login-card-footer-text {
+      margin-bottom: 24px;
+   }
+  }
+  .login-card-footer-nav a {
+    font-size: 14px;
+    color: #919aa3;
+  }
+  .form-horizontal .form-group {
+    margin-bottom: 20px;
+   /* Adds space between form groups */
+  }
+  
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
