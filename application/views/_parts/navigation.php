@@ -39,6 +39,9 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Donation</a>
                             </li>
                         </ul>
