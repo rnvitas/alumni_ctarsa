@@ -32,7 +32,11 @@
     <!-- Template Main CSS File -->
     <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/slick/slick-theme.css">
+
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/information.css"> -->
+
     <link href="assets/css/landing.css" rel="stylesheet">
 
 

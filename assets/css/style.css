@@ -1,3 +1,9 @@
+
+@import url(../../assets/css/information.css);
+@import url(../../assets/css/informationdetails.css);
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
 :root {
     --primary: #CB9224 !important;
     --hover: #9A8743;
@@ -15,6 +21,8 @@ body {
     display: flex !important;
     flex-direction: column !important;
 }
+
+
 
 a {
     color: #e03a3c;
