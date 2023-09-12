@@ -32,8 +32,10 @@
     <!-- Template Main CSS File -->
     <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/slick/slick-theme.css">
-
+    <!-- <link rel="stylesheet" href="<? php // echo base_url();
+                                        ?>assets/vendor/slick/slick-theme.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
     <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/information.css"> -->
 

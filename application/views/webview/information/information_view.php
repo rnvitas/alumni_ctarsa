@@ -50,18 +50,13 @@
 <section id="carouselExampleControls" class="card-information-carosel">
     <div class="wrapper-body">
         <div class="blogtext">
-            <p>Sedang Populer</p>
+
             <div class="row">
-                <div class="col-6 text-right">
-                    <a class="btn  mb-3 mr-1 carousel-control-prevv" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <i class="bi bi-caret-left " aria-hidden="true"></i>
-                    </a>
-                    <a class="btn mb-3 carousel-control-nextt " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <i class="bi bi-caret-right" aria-hidden="true"></i>
-                    </a>
+                <div class="col-6 d-flex justify-content-start ">
+                    <p>Sedang Populer</p>
                 </div>
                 <div class="col-6 d-flex justify-content-end text-right">
-                    <button type="button" class="btn informationbtn">Semua Informasi</button>
+                    <button type="button" class="btn btn-primary">Lihat Semua</button>
 
                 </div>
             </div>
@@ -69,13 +64,13 @@
 
 
         <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+            <div class="slider carousel-inner">
+                <div class="carousel-items me-3">
                     <div class="card">
                         <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
                         <div class="card-body ">
                             <div class="d-flex justify-content-between">
-                                <p class="card-title1">blog</p>
+                                <p class="title-category">blog</p>
                                 <p class="card-title">23 Januari 2023</p>
                             </div>
                             <p class="card-text">
@@ -85,18 +80,18 @@
                                 <a class="seemore" href="">
                                     <p>see more</p>
                                 </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-items me-3">
                     <div class="card">
                         <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
+                                <p class="title-category">Blog</p>
                                 <p class="card-title">23 Januari 2023</p>
                             </div>
                             <p class="card-text text-start">
@@ -106,17 +101,17 @@
                                 <a class="seemore" href="">
                                     <p>see more</p>
                                 </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-items me-3">
                     <div class="card">
                         <img src="assets/image/blog/image 28.png" class="card-img-top" alt="Hollywood Sign on The Hill" />
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
+                                <p class="title-category">Blog</p>
                                 <p class="card-title">23 Januari 2023</p>
                             </div>
                             <p class="card-text">
@@ -126,17 +121,17 @@
                                 <a class="seemore" href="">
                                     <p>see more</p>
                                 </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-items me-3">
                     <div class="card">
                         <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
+                                <p class="title-category">Blog</p>
                                 <p class="card-title">23 Januari 2023</p>
                             </div>
                             <p class="card-text">
@@ -146,17 +141,17 @@
                                 <a class="seemore" href="">
                                     <p>see more</p>
                                 </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-items me-3">
                     <div class="card">
                         <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
+                                <p class="title-category">Blog</p>
                                 <p class="card-title">23 Januari 2023</p>
                             </div>
                             <p class="card-text">
@@ -166,7 +161,7 @@
                                 <a class="seemore" href="">
                                     <p>see more</p>
                                 </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
                             </div>
                         </div>
                     </div>
@@ -177,137 +172,9 @@
 </section>
 <!-- End blogdetails section -->
 
-<!-- new Section -->
-
-<section id="carouselExampleControls" class="card-information-carosel">
-    <div class="wrapper-body">
-        <div class="blogtext">
-            <p>Sedang Populer</p>
-            <div class="row">
-                <div class="col-6 text-right">
-                    <a class="btn  mb-3 mr-1 carousel-control-prevv" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <i class="bi bi-caret-left " aria-hidden="true"></i>
-                    </a>
-                    <a class="btn mb-3 carousel-control-nextt " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <i class="bi bi-caret-right" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="col-6 d-flex justify-content-end text-right">
-                    <button type="button" class="btn informationbtn">Semua Informasi</button>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                        <div class="card-body ">
-                            <div class="d-flex justify-content-between">
-                                <p class="card-title1">blog</p>
-                                <p class="card-title">23 Januari 2023</p>
-                            </div>
-                            <p class="card-text">
-                                Alumni Inspiratif Kami: Kisah Sukses Pengusaha Muda yang Berawal dari Bangku Sekolah
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <a class="seemore" href="">
-                                    <p>see more</p>
-                                </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
-                                <p class="card-title">23 Januari 2023</p>
-                            </div>
-                            <p class="card-text text-start">
-                                Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <a class="seemore" href="">
-                                    <p>see more</p>
-                                </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="assets/image/blog/image 28.png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
-                                <p class="card-title">23 Januari 2023</p>
-                            </div>
-                            <p class="card-text">
-                                Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <a class="seemore" href="">
-                                    <p>see more</p>
-                                </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
-                                <p class="card-title">23 Januari 2023</p>
-                            </div>
-                            <p class="card-text">
-                                Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <a class="seemore" href="">
-                                    <p>see more</p>
-                                </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <p class="card-title1">Blog</p>
-                                <p class="card-title">23 Januari 2023</p>
-                            </div>
-                            <p class="card-text">
-                                Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
-                            </p>
-                            <div class="d-flex justify-content-between">
-                                <a class="seemore" href="">
-                                    <p>see more</p>
-                                </a>
-                                <p><i class="bi bi-eye"></i>12 kali dilihat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End blogdetails section -->
 
 
 </main>
+
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

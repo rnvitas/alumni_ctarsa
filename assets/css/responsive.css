@@ -86,3 +86,31 @@
 }
 
 }
+
+@media only screen and (min-width: 281px) and (max-width: 360px) and (orientation: portrait) {
+    .carousel-inner .carousel-items .card {
+  width: 246px;
+    /* height: 380px; */
+    height: auto;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 30px;
+    margin-bottom:2rem;
+    margin-right:0.2rem!important;
+
+   
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 756px) and (orientation: portrait) {
+      .carousel-inner .carousel-items .card {
+  width: 246px;
+    /* height: 380px; */
+    height: auto;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 30px;
+    margin-bottom:2rem;
+    margin-right:0.2rem!important;
+
+   
+  }
+}
