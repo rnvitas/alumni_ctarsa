@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
-$this->load->view('_parts/navigation');
 $this->load->view('_parts/header');
+$this->load->view('_parts/navigation');
 // $this->load->view('_parts/side_nav_db');
 $this->load->view($content);
 // $this->load->view('layouts/_parts/nav_bottom');

@@ -1,6 +1,20 @@
 <section id="portfolio" class="portfolio">
     <div class="wrapper-body" data-aos="fade-up">
 
+        <div class="container-search mb-5">
+            <div class="d-flex justify-content-center">
+                <div class="col-lg-10">
+                    <div class="search-bar">
+                        <!-- <div class="icon-search"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                <path d="M24.3324 24.7529L30.999 31.4196M0.999023 14.7529C0.999023 18.2891 2.40378 21.6805 4.90427 24.181C7.40475 26.6815 10.7961 28.0862 14.3324 28.0862C17.8686 28.0862 21.26 26.6815 23.7604 24.181C26.2609 21.6805 27.6657 18.2891 27.6657 14.7529C27.6657 11.2167 26.2609 7.82528 23.7604 5.3248C21.26 2.82431 17.8686 1.41956 14.3324 1.41956C10.7961 1.41956 7.40475 2.82431 4.90427 5.3248C2.40378 7.82528 0.999023 11.2167 0.999023 14.7529Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></div> -->
+
+
+                        <input class="form-control" type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-12 d-flex justify-content-center">
@@ -45,17 +59,16 @@
         </div>
 </section>
 
-<!-- new Section -->
+<!--Populer Section -->
 
 <section id="carouselExampleControls" class="card-information-carosel">
     <div class="wrapper-body">
-        <div class="blogtext">
-
-            <div class="row">
-                <div class="col-6 d-flex justify-content-start ">
+        <div class="title-section ">
+            <div class="col-lg-12 d-flex justify-content-between">
+                <div class="col-lg-6 ">
                     <p>Sedang Populer</p>
                 </div>
-                <div class="col-6 d-flex justify-content-end text-right">
+                <div class="col-lg-6 d-flex justify-content-end ">
                     <button type="button" class="btn btn-primary">Lihat Semua</button>
 
                 </div>
@@ -170,8 +183,137 @@
         </div>
     </div>
 </section>
-<!-- End blogdetails section -->
 
+
+<!-- End Populer section -->
+
+<!--Populer Section -->
+
+<section id="carouselExampleControls" class="card-information-carosel">
+    <div class="wrapper-body">
+        <div class="title-section ">
+            <div class="col-lg-12 d-flex justify-content-between">
+                <div class="col-lg-6 ">
+                    <p>Terbaru</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end ">
+                    <button type="button" class="btn btn-primary">Lihat Semua</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="carousel">
+            <div class="slider carousel-inner">
+                <div class="carousel-items me-3">
+                    <div class="card">
+                        <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between">
+                                <p class="title-category">blog</p>
+                                <p class="card-title">23 Januari 2023</p>
+                            </div>
+                            <p class="card-text">
+                                Alumni Inspiratif Kami: Kisah Sukses Pengusaha Muda yang Berawal dari Bangku Sekolah
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a class="seemore" href="">
+                                    <p>see more</p>
+                                </a>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-items me-3">
+                    <div class="card">
+                        <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="title-category">Blog</p>
+                                <p class="card-title">23 Januari 2023</p>
+                            </div>
+                            <p class="card-text text-start">
+                                Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a class="seemore" href="">
+                                    <p>see more</p>
+                                </a>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-items me-3">
+                    <div class="card">
+                        <img src="assets/image/blog/image 28.png" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="title-category">Blog</p>
+                                <p class="card-title">23 Januari 2023</p>
+                            </div>
+                            <p class="card-text">
+                                Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a class="seemore" href="">
+                                    <p>see more</p>
+                                </a>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-items me-3">
+                    <div class="card">
+                        <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="title-category">Blog</p>
+                                <p class="card-title">23 Januari 2023</p>
+                            </div>
+                            <p class="card-text">
+                                Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a class="seemore" href="">
+                                    <p>see more</p>
+                                </a>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-items me-3">
+                    <div class="card">
+                        <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="title-category">Blog</p>
+                                <p class="card-title">23 Januari 2023</p>
+                            </div>
+                            <p class="card-text">
+                                Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a class="seemore" href="">
+                                    <p>see more</p>
+                                </a>
+                                <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- End Populer section -->
 
 
 </main>

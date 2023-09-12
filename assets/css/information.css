@@ -15,6 +15,20 @@ body {
 }
 
 
+/* Search bar */
+
+.container-search .search-bar .form-control{
+ border-radius: 30px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+height: 65px;
+}
+
+.container-search .search-bar .icon-search{
+  position: absolute;
+}
+/* Search bar */
+
 /*--------------------------------------------------------------
 # galery
 --------------------------------------------------------------*/
@@ -38,11 +52,11 @@ body {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 15px 10px 15px;
+  padding: 8px 30px 10px 30px;
   font-size: 14px;
-  font-weight: 600;
+  /* font-weight: 600; */
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #444444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
@@ -220,7 +234,11 @@ body {
     /* width: 40vh;
     height: auto; */
   }
-  
+
+  .card-information-carosel{
+    margin-top:3rem;
+    margin-bottom:-10rem!important;
+  }
   .carousel-control-prevv,
   .carousel-control-nextt {
     border-radius: 50%;
@@ -296,18 +314,15 @@ body {
     font-size: 10px;
   }
   
-  .blogtext {
-    padding-left: 20px;
-    padding-top: 10vh;
-  }
+
   
-  .blogtext p {
+  .title-section p {
     color: var(--color-primary);
     font-size: 20px;
     font-weight: bold;
   }
   
-  .blogtext h3 {
+  .title-section h3 {
     font-weight: bold;
   }
   
