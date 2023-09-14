@@ -1,10 +1,9 @@
-    <div class="hero-information" style="  background-color:transparent;
-">
-        <div class="container-fluid">
-            <div class="background-image">
-                <img id="background-image" src="" alt="">
-            </div>
+    <div class="hero-information" style="  background-color:transparent;">
+
+        <div class="background-image">
+            <img id="background-image" src="" alt="">
         </div>
+
         <div class="wrapper-body">
             <div class="hero-slider pt-5">
                 <div class="row">
@@ -395,6 +394,10 @@
             outline: none
         }
 
+        .slick-slide .slick-active .bg {
+            margin: 0 30px !important;
+        }
+
         .slick-prev,
         .slick-next {
             position: absolute;
@@ -412,8 +415,12 @@
 
         .background-image {
             position: absolute;
+            display: flex;
             width: 100vw;
-            height: 60vh;
+            height: 678.42px;
+
+            /* width: 100%;
+            height: 60%; */
             object-fit: cover;
             top: 0;
             left: 0;
@@ -425,20 +432,23 @@
             position: absolute;
             top: 0;
             left: 0;
+            /* width: 100vw;
+            height: 60vh; */
             width: 100vw;
-            height: 60vh;
+            height: 678.42px;
             object-fit: cover;
             background-color: rgba(255, 255, 255, .6);
             /* height: 100vh; */
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
             z-index: 11;
         }
 
         .background-image img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             transition: all .3s;
+
         }
 
 

@@ -1,7 +1,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('.sliders').slick({
-            dots: true,
+            dots: false,
             infinite: false,
             speed: 300,
             slidesToShow: 4,
@@ -74,6 +74,9 @@
         slidesToShow: 3,
         slidesToScroll: 3,
         centerMode: true,
+        // autoplay: true,
+        // autoplaySpeed: 4000,
+        centerPadding: '60px',
         nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
         prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
         responsive: [{
