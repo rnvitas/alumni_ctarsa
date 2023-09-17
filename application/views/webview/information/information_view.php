@@ -353,7 +353,7 @@
     <!-- End Populer section -->
 
 
-    </main>
+
 
     <style>
         .hero-information {
@@ -460,5 +460,5 @@
             overflow: hidden;
         }
     </style>
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script> -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

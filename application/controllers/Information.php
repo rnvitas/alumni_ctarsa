@@ -18,4 +18,12 @@ class Information extends CI_Controller
         $data['content_js'] = 'webview/information/information_js';
         $this->load->view('_parts/wrapper', $data);
     }
+
+    public function detail()
+    {
+
+        $data['content']     = 'webview/information/detail_information_view';
+        $data['content_js'] = 'webview/information/information_js';
+        $this->load->view('_parts/wrapper', $data);
+    }
 }
