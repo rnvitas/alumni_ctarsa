@@ -42,7 +42,7 @@
             autoplaySpeed: 5000,
             dots: true,
             infinite: true,
-            arrows: true,
+            arrows: false,
             centerMode: true,
             variableWidth: true,
         });

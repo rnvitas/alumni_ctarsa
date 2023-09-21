@@ -56,13 +56,13 @@
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter="*" class="filter-active"><a class="text-dark" href="<?php echo base_url('information') ?>">All</a></li>
+                        <?php foreach ($category as $row) { ?>
+                            <li data-filter=".filter-app"><?php echo $row->category_name ?></li>
+
+                        <?php } ?>
+
+
                     </ul>
                 </div>
             </div>
@@ -75,23 +75,25 @@
 
             <div class="informationcard justify-content-center">
                 <div class="card">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 justify-content-center">
-                            <div class="card-title">
-                                Kabar Alumni
+                    <?php foreach ($kabaralumni as $kbr) { ?>
+                        <div class="row justify-content-center">
 
+                            <div class="col-md-4 justify-content-center">
+                                <div class="card-title">
+                                    <?php echo ($kbr->category_name) ?>
+
+                                </div>
+                                <h4> <?php echo ($kbr->title) ?>
+                                </h4>
+                                <p class="card-date"> <?php echo ($kbr->date) ?></p>
+                                <p> <?php echo substr($kbr->description, 0, 350) . "..." ?></p>
                             </div>
-                            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </h4>
-                            <p class="card-date">23 Februari 2021</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quaerat odio voluptate a magnam, quae
-                                cupiditate, doloremque ab reiciendis adipisci facere, voluptates ad modi officiis tempora consequuntur
-                                tenetur dignissimos recusandae ab reiciendis adipisci facere, voluptates ad modi officiis tempora consequuntur
-                                tenetur dignissimos recusandae!</p>
+                            <div class="col-md-8 d-flex justify-content-end">
+                                <img class="image-alumni" src="<?php echo base_url(); ?>uploads/information/<?php echo $kbr->thumbnail_image; ?>" alt="">
+                            </div>
+
                         </div>
-                        <div class="col-md-8 d-flex justify-content-end">
-                            <img src="<?php echo base_url('assets/image/blog/image 31.png') ?>" alt="">
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
     </section>
@@ -115,107 +117,35 @@
 
             <div class="carousel">
                 <div class="slider carousel-inner">
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body ">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Alumni Inspiratif Kami: Kisah Sukses Pengusaha Muda yang Berawal dari Bangku Sekolah
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
+                    <?php foreach ($populer as $p) { ?>
+                        <div class="carousel-items me-3">
+                            <div class="card">
+                                <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $p->id ?>">
+                                    <img src="<?php echo base_url(); ?>uploads/information/<?php echo $p->thumbnail_image; ?>" class="card-img-top" alt="" />
+                                </a>
+                                <div class="card-body ">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="title-category"><?php echo $p->category_name ?></p>
+                                        <p class="card-title"><?php echo $p->date ?></p>
+                                    </div>
+                                    <p class="card-text">
+                                        <?php echo $p->title ?>
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        <a class="seemore" href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $p->id ?>">
+                                            <p>see more</p>
+                                        </a>
+                                        <p><i class="bi bi-eye pe-1"></i> <?php echo $p->count ?> kali dilihat</p>
+                                    </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text text-start">
-                                    Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 28.png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -243,110 +173,33 @@
 
             <div class="carousel">
                 <div class="slider carousel-inner">
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body ">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Alumni Inspiratif Kami: Kisah Sukses Pengusaha Muda yang Berawal dari Bangku Sekolah
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
+                    <?php foreach ($terbaru as $t) { ?>
+                        <div class="carousel-items me-3">
+                            <div class="card">
+                                <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>"><img src=" <?php echo base_url(); ?>uploads/information/<?php echo $t->thumbnail_image; ?>" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                                </a>
+                                <div class="card-body ">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="title-category"><?php echo $t->category_name ?></p>
+                                        <p class="card-title"><?php echo $t->date ?></p>
+                                    </div>
+                                    <p class="card-text">
+                                        <?php echo $t->title ?>
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        <a class="seemore" href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>">
+                                            <p>see more</p>
+                                        </a>
+                                        <p><i class="bi bi-eye pe-1"></i> <?php echo $t->count ?> kali dilihat</p>
+                                    </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text text-start">
-                                    Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 28.png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Reuni Akbar Alumni SMA ABC: Mengenang Kenangan Indah dan Merencanakan Masa Depan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (1).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-items me-3">
-                        <div class="card">
-                            <img src="assets/image/blog/image 21 (2).png" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <p class="title-category">Blog</p>
-                                    <p class="card-title">23 Januari 2023</p>
-                                </div>
-                                <p class="card-text">
-                                    Kesempatan Karir: Buka Lowongan Pekerjaan Menarik bagi Lulusan Teknik Lingkungan
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <a class="seemore" href="">
-                                        <p>see more</p>
-                                    </a>
-                                    <p><i class="bi bi-eye pe-1"></i> 12 kali dilihat</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
+
                 </div>
             </div>
-        </div>
     </section>
 
 
