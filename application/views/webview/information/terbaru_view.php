@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active"><a class="text-dark" href="<?php echo base_url('information') ?>">All</a></li>
@@ -65,18 +65,19 @@
 
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <div class="section-title">
-                <h2 class="text-center">Information</h2>
+                <h2 class="text-center">Terbaru</h2>
                 <p class="text-center">Temukan berbagai Informasi yang penting mengenai hal-hal yang </p>
                 <p class="text-center">berkaitan dengan alumni SMAU CTARSA</p>
             </div>
 
             <div class="informationcard justify-content-center">
-                <div class="card">
-                    <?php foreach ($kabaralumni as $row) { ?>
-                        <div class="row justify-content-center" onclick="showDetail()" style="cursor:pointer">
+                <?php foreach ($all_terbaru as $row) { ?>
+
+                    <div class="card mb-5">
+                        <div class="row justify-content-center " onclick="showDetail()" style="cursor:pointer">
 
                             <div class="col-md-4 justify-content-center">
                                 <div class="card-title">
@@ -95,117 +96,12 @@
                                 </a>
                             </div>
                         </div>
-                    <?php } ?>
-                </div>
+                    </div>
+                <?php } ?>
+
             </div>
     </section>
 
-    <!--Populer Section -->
-
-    <section id="carouselExampleControls" class="card-information-carosel">
-        <div class="wrapper-body">
-            <div class="title-section ">
-                <div class="col-lg-12 d-flex justify-content-between">
-                    <div class="col-lg-6 ">
-                        <p>Sedang Populer</p>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-end ">
-                        <button type="button" class="btn btn-primary" onclick="showPopuler()">Lihat Semua</button>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="carousel">
-                <div class="slider carousel-inner">
-                    <?php foreach ($populer as $row) { ?>
-                        <div class="carousel-items me-3" onclick="showDetail()" style="cursor:pointer">
-                            <div class="card">
-                                <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $row->id ?>">
-                                    <img src="<?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" class="card-img-top" alt="" />
-                                </a>
-                                <div class="card-body ">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="title-category"><?php echo $row->category_name ?></p>
-                                        <p class="card-title"><?php echo $row->date ?></p>
-                                    </div>
-                                    <p class="card-text">
-                                        <?php echo $row->title ?>
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="seemore" href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $row->id ?>">
-                                            <p>see more</p>
-                                        </a>
-                                        <p><i class="bi bi-eye pe-1"></i> <?php echo $row->count ?> kali dilihat</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
-
-
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- End Populer section -->
-
-    <!--Populer Section -->
-
-    <section id="carouselExampleControls" class="card-information-carosel">
-        <div class="wrapper-body">
-            <div class="title-section ">
-                <div class="col-lg-12 d-flex justify-content-between">
-                    <div class="col-lg-6 ">
-                        <p>Terbaru</p>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-end ">
-                        <button type="button" class="btn btn-primary" onclick="showTerbaru()">Lihat Semua</button>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="carousel">
-                <div class="slider carousel-inner">
-                    <?php foreach ($terbaru as $t) { ?>
-                        <div class="carousel-items me-3" onclick="showDetailTerbaru()" style="cursor:pointer">
-                            <div class="card">
-                                <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>"><img src=" <?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" class="card-img-top" alt="Hollywood Sign on The Hill" />
-                                </a>
-                                <div class="card-body ">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="title-category"><?php echo $t->category_name ?></p>
-                                        <p class="card-title"><?php echo $t->date ?></p>
-                                    </div>
-                                    <p class="card-text">
-                                        <?php echo $t->title ?>
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="seemore" href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>">
-                                            <p>see more</p>
-                                        </a>
-                                        <p><i class="bi bi-eye pe-1"></i> <?php echo $t->count ?> kali dilihat</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
-
-                </div>
-            </div>
-    </section>
-
-
-    <!-- End Populer section -->
 
 
 
@@ -318,18 +214,8 @@
 
 
     <script>
-        function showDetailTerbaru() {
-            url = "<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>"
-            window.location = url
-        }
-
-        function showPopuler() {
-            url = "<?php echo base_url('Information/populer_section'); ?>"
-            window.location = url
-        }
-
-        function showTerbaru() {
-            url = "<?php echo base_url('Information/newest_section'); ?>"
+        function showDetail() {
+            url = "<?php echo base_url(); ?>Information/detail/?id=<?php echo $row->id ?>"
             window.location = url
         }
     </script>

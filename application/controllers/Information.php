@@ -58,4 +58,26 @@ class Information extends CI_Controller
             $this->info->update_counter(urldecode($id));
         }
     }
+
+    function populer_section()
+    {
+
+        $data['all_populer'] = $this->info->getAllPopuler();
+        $data['populer'] = $this->info->getPopuler();
+        $data['category'] = $this->info->getAllType();
+        $data['content']     = 'webview/information/popular_view';
+        $data['content_js'] = 'webview/information/information_js';
+        $this->load->view('_parts/wrapper', $data);
+    }
+
+
+    function newest_section()
+    {
+        $data['all_terbaru'] = $this->info->getAllTerbaru();
+        $data['terbaru'] = $this->info->getTerbaru();
+        $data['category'] = $this->info->getAllType();
+        $data['content']     = 'webview/information/terbaru_view';
+        $data['content_js'] = 'webview/information/information_js';
+        $this->load->view('_parts/wrapper', $data);
+    }
 }

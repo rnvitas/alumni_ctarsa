@@ -38,7 +38,7 @@
                     <p>Sedang Populer</p>
                 </div>
                 <div class="col-lg-6 d-flex justify-content-end ">
-                    <button type="button" class="btn btn-primary">Lihat Semua</button>
+                    <button type="button" class="btn btn-primary" onclick="showPopuler()">Lihat Semua</button>
 
                 </div>
             </div>
@@ -80,6 +80,9 @@
 </section>
 
 
-<!-- End Populer section -->
-
-<!-- End Populer section -->
+<script>
+    function showPopuler() {
+        url = "<?php echo base_url('Information/populer_section'); ?>"
+        window.location = url
+    }
+</script>
