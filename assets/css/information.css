@@ -24,9 +24,24 @@ body {
 .container-search .search-bar .form-control{
  border-radius: 30px;
 background: #FFF;
+/* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+height: 65px;
+border:none;
+width:100%!important;
+}
+
+.container-search .search-bar .form-control:focus{
+  border:none!important;
+  box-shadow: none!important;
+}
+
+.container-search .search-filter{
+ border-radius: 30px;
+background: #FFF;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 height: 65px;
 }
+
 
 .container-search .search-bar .icon-search{
   position: absolute;

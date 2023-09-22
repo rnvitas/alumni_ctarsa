@@ -38,9 +38,16 @@
     <section id="portfolio" class="portfolio">
         <div class="wrapper-body" data-aos="fade-up">
 
-            <div class="container-search mb-5">
-                <div class="d-flex justify-content-center">
-                    <div class="col-lg-10">
+            <div class="container-search d-flex justify-content-center mb-5">
+
+                <div class="col-lg-10  search-filter d-flex justify-content-center align-items-center">
+                    <div class="col-lg-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <path d="M24.3333 24.3333L31 31M1 14.3333C1 17.8696 2.40476 21.2609 4.90524 23.7614C7.40573 26.2619 10.7971 27.6667 14.3333 27.6667C17.8696 27.6667 21.2609 26.2619 23.7614 23.7614C26.2619 21.2609 27.6667 17.8696 27.6667 14.3333C27.6667 10.7971 26.2619 7.40573 23.7614 4.90524C21.2609 2.40476 17.8696 1 14.3333 1C10.7971 1 7.40573 2.40476 4.90524 4.90524C2.40476 7.40573 1 10.7971 1 14.3333Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="col-lg-7">
+
                         <div class="search-bar">
                             <!-- <div class="icon-search"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                                 <path d="M24.3324 24.7529L30.999 31.4196M0.999023 14.7529C0.999023 18.2891 2.40378 21.6805 4.90427 24.181C7.40475 26.6815 10.7961 28.0862 14.3324 28.0862C17.8686 28.0862 21.26 26.6815 23.7604 24.181C26.2609 21.6805 27.6657 18.2891 27.6657 14.7529C27.6657 11.2167 26.2609 7.82528 23.7604 5.3248C21.26 2.82431 17.8686 1.41956 14.3324 1.41956C10.7961 1.41956 7.40475 2.82431 4.90427 5.3248C2.40378 7.82528 0.999023 11.2167 0.999023 14.7529Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -50,7 +57,17 @@
                             <input class="form-control" type="text" placeholder="Search...">
                         </div>
                     </div>
+
+
+                    <div class="col-lg-2">
+                        <select class="select2 js-example-basic-single">
+                            <option>Terbaru</option>
+                            <option>Terpopuler</option>
+
+                        </select>
+                    </div>
                 </div>
+
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -76,7 +93,7 @@
             <div class="informationcard justify-content-center">
                 <div class="card">
                     <?php foreach ($kabaralumni as $row) { ?>
-                        <div class="row justify-content-center" onclick="showDetail()" style="cursor:pointer">
+                        <div class="row justify-content-center" onclick="showDetail(<?php echo $row->id ?>)" style="cursor:pointer">
 
                             <div class="col-md-4 justify-content-center">
                                 <div class="card-title">
@@ -120,7 +137,7 @@
             <div class="carousel">
                 <div class="slider carousel-inner">
                     <?php foreach ($populer as $row) { ?>
-                        <div class="carousel-items me-3" onclick="showDetail()" style="cursor:pointer">
+                        <div class="carousel-items me-3" onclick="showDetail(<?php echo $row->id ?>)" style="cursor:pointer">
                             <div class="card">
                                 <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $row->id ?>">
                                     <img src="<?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" class="card-img-top" alt="" />
@@ -176,7 +193,7 @@
             <div class="carousel">
                 <div class="slider carousel-inner">
                     <?php foreach ($terbaru as $t) { ?>
-                        <div class="carousel-items me-3" onclick="showDetailTerbaru()" style="cursor:pointer">
+                        <div class="carousel-items me-3" onclick="showDetail(<?php echo $t->id ?>)" style="cursor:pointer">
                             <div class="card">
                                 <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>"><img src=" <?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" class="card-img-top" alt="Hollywood Sign on The Hill" />
                                 </a>
@@ -318,9 +335,11 @@
 
 
     <script>
-        function showDetailTerbaru() {
-            url = "<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>"
-            window.location = url
+        function showDetail(id) {
+            alert(id);
+            url = "<?php echo base_url(); ?>Information/detail/?id=" + id,
+
+                window.location = url
         }
 
         function showPopuler() {
