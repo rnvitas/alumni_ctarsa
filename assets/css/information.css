@@ -68,7 +68,7 @@ height: 65px;
   text-align: center;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #portfolio-flters .filter-information {
   cursor: pointer;
   display: inline-block;
   padding: 8px 30px 10px 30px;
@@ -82,14 +82,14 @@ height: 65px;
   border-radius: 3px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters .filter-information:hover,
+.portfolio #portfolio-flters .filter-information.filter-active {
   color: #151515;
   background: rgba(0, 0, 0, 0.10);
   border-radius: 30px;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.portfolio #portfolio-flters .filter-information:last-child {
   margin-right: 0;
 }
 
@@ -204,14 +204,6 @@ height: 65px;
 # blogdetails
 --------------------------------------------------------------*/
 
-.blogdetails {
-  /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
-  border: none;
-  /* background-color: var(--color-secondary); */
-  margin-top: -3%;
-  overflow: hidden;
-
-}
 
 .card .image-alumni{
   border-radius:30px;
@@ -382,3 +374,25 @@ height: 65px;
   /* .slick-next{
     background-color: var(--color-primary)!important;
   } */
+
+
+.hero-information .slick .item.slick-active{
+  transform: rotate(5deg)!important;
+  width: 758.72px;
+  height: 426.78px;
+  object-fit: cover;
+}
+
+
+.hero-information .slick .item.slick-cloned.slick-active{
+transform: rotate(-5deg)!important;
+width: 758.72px;
+height: 426.78px;
+object-fit: cover;
+
+
+}
+
+.hero-information .slick .item.slick-current.slick-active.slick-center{
+transform: rotate(0deg)!important;
+}

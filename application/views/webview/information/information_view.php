@@ -73,9 +73,9 @@
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active"><a class="text-dark" href="<?php echo base_url('information') ?>">All</a></li>
+                        <button class="btn filter-information filter-active"><a style="text-decoration:none;" class="text-dark" href="<?php echo base_url('information') ?>">All</a></button>
                         <?php foreach ($category as $row) { ?>
-                            <li data-filter=".filter-app"><?php echo $row->category_name ?></li>
+                            <button class="filter-information btn"><?php echo $row->category_name ?></button>
 
                         <?php } ?>
 

@@ -2,8 +2,8 @@
 
      <div class="blogtext wrapper-body text-center ">
          <h1>Blog</h1>
-         <p>Lorem ipsum dolor sit amet, syarat dan ketentuan </p>
-         <p>Lorem ipsum dolor sit amet consectetur </p>
+         <p class="text-white">Baca Berbagai Tulisan Informatif, Inspiratif, dan Relevan untuk Anda.</p>
+         <p class="text-white">Kami Senang dapat Menjadi Sumber Informasi dan Inspirasi </p>
      </div>
  </section>
 
@@ -31,23 +31,35 @@
  <section id="blog" class="blog">
      <div id="main-content" class="blog-page">
      </div>
-     <div class="container">
+     <div class="wrapper-body">
          <div class="row clearfix">
              <div class="col-lg-8 col-md-12 left-box">
-                 <div class="card single_post">
+                 <div class="card-blog single_post">
+                     <div class="body">
+                         <!-- <div class="cat-blogs d-flex justify-content-start"> -->
+                         <div class="col-lg-12 d-flex justify-content-start" style="overflow-x:scroll; overflow-y:hidden;" style data-aos="fade-up" data-aos-delay="100">
+                             <div id="portfolio-flters" class=" d-flex justify-content-start cat-blog-card">
+                                 <button data-filter="*" class="filter-active cat-blog btn">All</button>
+
+                                 <?php foreach ($category as $cat) { ?>
+                                     <button data-filter=".filter-app" class="cat-blog btn"><?php echo $cat->category_name ?></button>
+
+                                 <?php } ?>
+
+
+                             </div>
+                         </div>
+
+                         <!-- </div> -->
+
+                     </div>
+
+                 </div>
+
+
+                 <div class="card-blog single_post">
                      <div class="body">
                          <div class="row">
-                             <div class="col-lg-12 d-flex justify-content-start" data-aos="fade-up" data-aos-delay="100">
-                                 <ul id="portfolio-flters">
-                                     <li data-filter="*" class="filter-active">All</li>
-                                     <li data-filter=".filter-app">App</li>
-                                     <li data-filter=".filter-card">Card</li>
-                                     <li data-filter=".filter-web">Web</li>
-                                     <li data-filter=".filter-app">App</li>
-                                     <li data-filter=".filter-card">Card</li>
-                                     <li data-filter=".filter-web">Web</li>
-                                 </ul>
-                             </div>
                              <div class="col-md-10">
                                  <div class="col-lg-12 d-flex justify-content-between">
                                      <div class="col-lg-6">
@@ -72,7 +84,7 @@
                              </div>
                              <div class="col-md-2 d-flex justify-content-between">
                                  <div class="img-post">
-                                     <img class="d-block img-fluid" src="assets/img/blog/image 56.png" alt="First slide" />
+                                     <img class="d-block img-fluid image-thumbnail" src="<?php echo base_url() ?>assets/image/blog/image 56.png" alt="First slide" />
                                  </div>
                              </div>
                          </div>
@@ -92,7 +104,8 @@
                          </div>
                      </div>
                  </div>
-                 <div class="card single_post">
+
+                 <div class="card-blog single_post">
                      <div class="body">
                          <div class="row">
                              <div class="col-md-10">
@@ -119,7 +132,7 @@
                              </div>
                              <div class="col-md-2 d-flex justify-content-between">
                                  <div class="img-post">
-                                     <img class="d-block img-fluid" src="assets/img/blog/image 56.png" alt="First slide" />
+                                     <img class="d-block img-fluid image-thumbnail" src="<?php echo base_url() ?>assets/image/blog/image 56.png" alt="First slide" />
                                  </div>
                              </div>
                          </div>
@@ -139,7 +152,8 @@
                          </div>
                      </div>
                  </div>
-                 <div class="card single_post">
+
+                 <div class="card-blog single_post">
                      <div class="body">
                          <div class="row">
                              <div class="col-md-10">
@@ -166,54 +180,7 @@
                              </div>
                              <div class="col-md-2 d-flex justify-content-between">
                                  <div class="img-post">
-                                     <img class="d-block img-fluid" src="assets/img/blog/image 56.png" alt="First slide" />
-                                 </div>
-                             </div>
-                         </div>
-
-                     </div>
-                     <div class="footer">
-                         <div class="col-lg-12 d-flex justify-content-between ">
-                             <div class="actions d-flex">
-                                 <a href="javascript:void(0);" class="btn btn-outline-secondary">Lomba</a>
-                                 <p>45 Kali dilihat</p>
-                             </div>
-                             <div class="action d-flex">
-                                 <a href="javascript:void(0);" class="btn "><i class="bi bi-share"></i></a>
-                                 <a href="javascript:void(0);" class="btn "><i class="bi bi-three-dots"></i></a>
-                             </div>
-
-                         </div>
-                     </div>
-                 </div>
-                 <div class="card single_post">
-                     <div class="body">
-                         <div class="row">
-                             <div class="col-md-10">
-                                 <div class="col-lg-12 d-flex justify-content-between">
-                                     <div class="col-lg-6">
-                                         <h3>
-                                             <a href="blog-details.html">All photographs are accurate</a>
-                                         </h3>
-                                     </div>
-                                     <div class="col-lg-6 d-flex justify-content-end">
-                                         <p>17 Desember 2023</p>
-                                     </div>
-
-                                 </div>
-                                 <p>
-                                     It is a long established fact that a reader will be distracted
-                                     by the readable content of a page when looking at its layout.
-                                     The point of using Lorem Ipsum is that it has a more-or-less
-                                     normal It is a long established fact that a reader will be distracted
-                                     by the readable content of a page when looking at its layout.
-                                     The point of using Lorem Ipsum is that it has a more-or-less
-                                     normal
-                                 </p>
-                             </div>
-                             <div class="col-md-2 d-flex justify-content-between">
-                                 <div class="img-post">
-                                     <img class="d-block img-fluid" src="assets/img/blog/image 56.png" alt="First slide" />
+                                     <img class="d-block img-fluid image-thumbnail" src="<?php echo base_url() ?>assets/image/blog/image 56.png" alt="First slide" />
                                  </div>
                              </div>
                          </div>
@@ -252,7 +219,7 @@
                  </ul>
              </div>
              <div class="col-lg-4 col-md-12 right-box">
-                 <div class="card">
+                 <div class="card-blog">
                      <div class="header d-flex ml-2">
                          <h2>Sedang Populer</h2>
                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="30" viewBox="0 0 23 30" fill="none">
@@ -311,7 +278,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="card">
+                 <div class="card-blog">
                      <div class="header d-flex ml-2">
                          <h2>Terbaru</h2>
                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">

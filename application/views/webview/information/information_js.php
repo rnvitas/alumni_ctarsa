@@ -113,7 +113,7 @@
         const activeElement = document.querySelector('.slick-current  .bg');
         const backgroundImage = document.querySelector('#background-image');
         backgroundImage.animate([{
-            opacity: 0
+            opacity: 1
         }, {
             opacity: 1
         }], {

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Blog extends CI_Controller
+class Event extends CI_Controller
 {
 
 
@@ -9,20 +9,20 @@ class Blog extends CI_Controller
     {
         parent::__construct();
 
-        $this->load->model('Blog_m', 'blog');
+        // $this->load->model('Blog_m', 'blog');
     }
     public function index()
     {
 
-        $data['category'] = $this->blog->getAllType();
+        // $data['category'] = $this->blog->getAllType();
         // $data['kabaralumni'] = $this->info->getKabarAlumni();
         // $data['all_blogs'] = $this->info->getAllBlog();
         // $data['terbaru'] = $this->info->getTerbaru();
 
 
 
-        $data['content']     = 'webview/blog/blog_view';
-        $data['content_js'] = 'webview/blog/blog_js';
+        $data['content']     = 'webview/event/event_view';
+        $data['content_js'] = 'webview/event/event_js';
         $this->load->view('_parts/wrapper', $data);
     }
 
@@ -33,8 +33,8 @@ class Blog extends CI_Controller
         // $data['populer'] = $this->blog->getPopuler();
         // $data['category'] = $this->blog->getAllType();
         // $data['detail_information'] = $this->blog->getInformation_by_id($id);
-        $data['content']     = 'webview/blog/detail_view';
-        $data['content_js'] = 'webview/blog/blog_js';
+        $data['content']     = 'webview/event/event_detail';
+        $data['content_js'] = 'webview/event/event_js';
         $this->load->view('_parts/wrapper', $data);
         // $this->add_count($id);
     }
@@ -66,7 +66,7 @@ class Blog extends CI_Controller
         $data['populer'] = $this->info->getPopuler();
         $data['category'] = $this->info->getAllType();
         $data['content']     = 'webview/blog/popular_view';
-        $data['content_js'] = 'webview/blog/blog_js';
+        $data['content_js'] = 'webview/event/event_js';
         $this->load->view('_parts/wrapper', $data);
     }
 
@@ -77,7 +77,7 @@ class Blog extends CI_Controller
         $data['terbaru'] = $this->info->getTerbaru();
         $data['category'] = $this->info->getAllType();
         $data['content']     = 'webview/blog/terbaru_view';
-        $data['content_js'] = 'webview/blog/blog_js';
+        $data['content_js'] = 'webview/event/event_js';
         $this->load->view('_parts/wrapper', $data);
     }
 }

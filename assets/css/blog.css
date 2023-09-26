@@ -112,7 +112,8 @@ body {
 # blog
 --------------------------------------------------------------*/
 
-.card {
+
+.card-blog {
   border-bottom: 2px solid  rgba(0, 0, 0, 0.10);;
   border-top: none;
   border-left: none;
@@ -124,13 +125,19 @@ body {
     background-color: #F3F3F3;
   }
 
-  .card .body {
+
+  .card-blog .image-thumbnail{
+    width:100%;
+    border-radius: 20px;
+  }
+  
+  .card-blog .body {
     color: #444;
     padding: 20px;
     font-weight: 400;
   }
 
-  .card .header {
+  .card-blog .header {
     color: #444;
     padding: 20px;
     position: relative;
@@ -374,25 +381,32 @@ body {
     text-align: center;
   }
   
-   #portfolio-flters li {
+/* .cat-blog-card{
+  max-width:800px!important;
+} */
+
+   #portfolio-flters .cat-blog {
     cursor: pointer;
     display: inline-block;
-    padding: 12px 80px 10px 0px;
+    padding: 12px 30px 10px 30px;
     font-size: 14px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #444444;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
+    width:max-content;
+    height:50px;
+    text-align: left;
   }
   
-   #portfolio-flters li:hover,
-   #portfolio-flters li.filter-active {
+   #portfolio-flters .cat-blog:hover,
+   #portfolio-flters .cat-blog.filter-active {
     color: #151515;
     text-decoration: underline;
   }
   
-  #portfolio-flters li:last-child {
+  #portfolio-flters .cat-blog:last-child {
     margin-right: 0;
   }
   

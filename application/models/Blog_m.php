@@ -3,15 +3,17 @@
 class Blog_m extends CI_Model
 {
 
-    var $table_type = 'mast_cat_informations';
+    var $table_type = 'mast_cat_blogs';
     var $table = 'trans_informations';
 
     public function getAllType()
     {
-        $this->db->select('* ');
-        $this->db->from('mast_cat_informations');
+        $this->db->select('*');
+        $this->db->from('mast_cat_blogs');
         // $this->db->where('id != 4 and id !=3');
         $this->db->where('active', 1);
+        $this->db->where('publish', 1);
+
 
         $query = $this->db->get();
         return $query->result();

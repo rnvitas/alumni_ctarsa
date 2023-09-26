@@ -17,14 +17,14 @@ body {
 /*--------------------------------------------------------------
 # blog
 --------------------------------------------------------------*/
-.wrapper-body {
+.wrapper-blog {
     max-width: 1000px;
     position: static;
     margin: 0 auto;
     padding: 1rem 2rem;
   }
 
-.card {
+.card-blog {
     border-bottom: none;
     border-top: none;
     border-left: none;
@@ -35,6 +35,8 @@ body {
       width: 100%;
       background-color: #F3F3F3;
     }
+
+
 .cards{
     border-bottom: 2px solid  rgba(0, 0, 0, 0.10);
     border-top: none;
@@ -42,24 +44,34 @@ body {
     border-right: none;
 }
   
-.container {
+.container-blog {
     border-bottom: 2px solid  rgba(0, 0, 0, 0.10);
     border-top: 2px solid  rgba(0, 0, 0, 0.10);
-    padding-top: 8%;
+    padding-top:3rem;
     padding-bottom: 10%;
 }
-    .card .body {
+    .card-blog .body {
       color: #444;
       font-weight: 400;
     }
   
-    .card .header {
+    .card-blog .header {
       color: #444;
       padding: 20px;
       position: relative;
       box-shadow: none;
     }
   
+
+    
+.blog-detail {
+  /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
+  border: none;
+  /* background-color: var(--color-secondary); */
+  margin-top: 2%;
+  overflow: hidden;
+
+}
     .single_post {
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
@@ -230,11 +242,11 @@ font-family: 'Lora', serif;
     .headerblog {
         border-radius: 30px;
 background-color: rgba(205, 166, 60, 0.10);
-width: 80px;
+width: max-content;
 height: 30px;
-padding-left: 10px;
-padding-top: 2px;
+padding:5px 27px;
 color: var(--color-primary);
+line-height: 129.2%; /* 20.672px */
     }
 
     

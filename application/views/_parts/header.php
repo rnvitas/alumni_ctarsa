@@ -35,6 +35,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>event-calendar-evo/event-calendar-evo/evo-calendar/css/evo-calendar.css" />
+    <!-- Optional Themes -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>event-calendar-evo/event-calendar-evo/evo-calendar/css/evo-calendar.midnight-blue.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>event-calendar-evo/event-calendar-evo/evo-calendar/css/evo-calendar.orange-coral.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>event-calendar-evo/event-calendar-evo/evo-calendar/css/evo-calendar.royal-navy.css" />
 
     <link href="assets/css/landing.css" rel="stylesheet">
 
