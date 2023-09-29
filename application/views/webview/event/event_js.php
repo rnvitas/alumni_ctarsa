@@ -1,5 +1,19 @@
 <script>
     $(document).ready(function() {
+
+
+
+        $('.eventcard').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            prevArrow: ".prevbutton", // Custom previous arrow button
+            nextArrow: ".nextbutton",
+            speed: 300,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
+
+
         myEvents = [{
                 id: "required-id-1",
                 name: "New Year",
@@ -26,23 +40,12 @@
             // more events here
         ];
 
-        $('#evoCalendar').evoCalendar({
-            calendarEvents: myEvents
+        $('#calendar').evoCalendar({
+            calendarEvents: myEvents,
+            theme: 'Royal Navy',
+
 
         });
 
-
-
-        $(".eventcard").slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            prevArrow: ".prevbutton", // Custom previous arrow button
-            nextArrow: ".nextbutton",
-            speed: 300,
-            autoplay: true,
-            autoplaySpeed: 5000,
-        });
     });
 </script>
-
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->

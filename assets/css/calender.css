@@ -20,14 +20,14 @@ body {
 # galeryhead
 --------------------------------------------------------------*/
 
-.galeryhead {
+/* .galeryhead {
     width: 100%;
     height: 45vh;
     background: url("../img/Group\ 164\ \(1\).png") top center no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 70px;
-  }
+  } */
   
 
 .blogtext{
@@ -129,9 +129,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
 .eventcard {
-    margin-top: 8%;
+    margin-top: 3rem;
 }
 
+.eventcard .card-event{
+    margin-bottom:2rem;
+}
   .prevbutton,
 .nextbutton {
   position: absolute;
@@ -159,49 +162,51 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .filters {
-    margin-top: 15%;
+    margin-top: 3rem;;
     padding: 0;
 }
 
-#portfolio-flters {
+#portfolio-filters {
     padding: 0;
     margin: 0 auto 20px auto;
     list-style: none;
     text-align: center;
 }
 
-#portfolio-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 8px 15px 10px 15px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #444444;
-    transition: all 0.3s ease-in-out;
-    border-radius: 3px;
+#portfolio-filters .filter-event {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+  font-size: 14px;
+  /* font-weight: 600; */
+  line-height: 1;
+  /* text-transform: uppercase; */
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
 }
 
- #portfolio-flters li:hover,
- #portfolio-flters li.filter-active {
+ #portfolio-filters .filter-event:hover,
+ #portfolio-filters .filter-event.filter-active {
     color: #151515;
     background: rgba(0, 0, 0, 0.10);
     border-radius: 30px;
 }
 
- #portfolio-flters li:last-child {
+ #portfolio-filters .filter-event:last-child {
     margin-right: 0;
 }
 
 
-.headerblog {
+
+
+.eventcard .card-event .headerblog {
     border-radius: 30px;
 background-color: rgba(205, 166, 60, 0.10);
-width: 60px;
+width: max-content;
 height: 30px;
-padding-left: 10px;
-padding-top: 2px;
+padding: 5px 20px;
 color: var(--color-primary);
 }
 
