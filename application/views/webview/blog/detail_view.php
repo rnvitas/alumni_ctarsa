@@ -1,39 +1,30 @@
- <div class="wrapper-blog " style="margin-top:10rem;">
+ <!-- <div class="wrapper-blog " style="margin-top:10rem;">
      <div class=" col-lg-12">
          <p class="headerblog">Kategori</p>
          <h1 class="headerblog1">Judul Blog yang Keren Lorem ipsum dolor sit amet consectetur adipiscing</h1>
          <p class="headerblog2">Minggu, 29 Agustus 2023 | Adib Dwi Kusuma</p>
      </div>
- </div>
+ </div> -->
 
 
- <section id="blogdetails" class="blog-detail">
+ <section id="blogdetails" class="blog-detail" style="margin-top:10rem;">
+
+
      <div class="wrapper-blog">
-         <div class="container-blog">
-             <div class="judul col-lg-12">
-                 <h3>H2 Untuk Section Lorem Ipsum Dolor Sit</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu dolor felis. Nunc egestas
-                     orci in lobortis elementum. Donec sem nisl, tincidunt vel erat a, ultricies tristique erat.
-                     Cras efficitur vestibulum libero in varius. Cras tellus sem, pellentesque non eros et,
-                     porttitor lacinia justo. Quisque ac dolor vitae ante sodales tristique eget a tortor. Donec
-                     sed ex facilisis, vulputate arcu et, efficitur massa.</p>
+         <?php foreach ($detail_blog as $d) { ?>
+             <div class=" col-lg-12">
+                 <p class="headerblog"><?php echo $d->category_name ?></p>
+                 <h1 class="headerblog1"><?php echo $d->title ?></h1>
+                 <p class="headerblog2"><?php echo $d->date ?> | <?php echo $d->post_by ?> | <i class="bi bi-eye"></i> <?php echo $d->count ?> dilihat</p>
              </div>
-             <img class="img-fluid mt-5" src="<?php echo base_url() ?>assets/image/blog/image 56.png" alt="">
-             <p class="d-flex justify-content-center mt-2" style="color: rgba(0, 0, 0, 0.50);">Photo by Lorem Ipsum on Dolor Sit Amet</p>
+             <div class="container-blog">
+                 <div class="judul col-lg-12">
+                     <?php echo $d->description ?>
+                 </div>
 
-             <div class="article1" style="margin-top: 10%;">
-                 <h3>Vestibulum tincidunt libero orci</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu dolor felis. Nunc egestas orci in lobortis elementum. Donec sem nisl, tincidunt vel erat a, ultricies tristique erat. Cras efficitur vestibulum libero in varius. Cras tellus sem, pellentesque non eros et, porttitor lacinia justo. Quisque ac dolor vitae ante sodales tristique eget a tortor. Donec sed ex facilisis, vulputate arcu et, efficitur massa.</p>
              </div>
+         <?php } ?>
 
-             <div class="article2" style="margin-top: 10%;">
-                 <h3>Vestibulum tincidunt libero orci</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu dolor felis. Nunc egestas orci in lobortis elementum. Donec sem nisl, tincidunt vel erat a, ultricies tristique erat. Cras efficitur vestibulum libero in varius. Cras tellus sem, pellentesque non eros et, porttitor lacinia justo. Quisque ac dolor vitae ante sodales tristique eget a tortor. Donec sed ex facilisis, vulputate arcu et, efficitur massa.</p>
-             </div>
-
-             <img class="img-fluid" src="<?php echo base_url() ?>assets/image/blog/image 56.png" alt="" style="margin-top: 10%;">
-             <p class="d-flex justify-content-center mt-2" style="color: rgba(0, 0, 0, 0.50);">Photo by Lorem Ipsum on Dolor Sit Amet</p>
-         </div>
      </div>
 
      <div class="wrapper-blog">

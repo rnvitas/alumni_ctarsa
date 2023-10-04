@@ -1,10 +1,10 @@
- <section>
+ <section class="event-detail">
      <div class="wrapper-body">
          <div class="row">
-             <div class="eventimg col-md-7">
-                 <img src="assets/img/information/image 54 (1).png" alt="">
+             <div class="eventimg col-md-6">
+                 <img src="<?php echo base_url() ?>assets/image/information/image 54 (1).png" alt="">
              </div>
-             <div class="col-md-5">
+             <div class="col-md-6">
                  <p class="headerblog">Upcoming</p>
                  <h3 class="headerblog1">Lorem ipsum dolor sit amet, consectetur </h3>
                  <h3 class="headerblog3 ">08 November 2023</h3>

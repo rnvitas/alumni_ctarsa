@@ -23,28 +23,24 @@ body {
   }
 
 
+  .event-detail{
+    margin-top: 8rem;
+  }
+
 
 /*--------------------------------------------------------------
 # events card
 --------------------------------------------------------------*/
-
-.headerblog {
+.event-detail .headerblog {
     border-radius: 30px;
 background-color: rgba(205, 166, 60, 0.10);
-color: var(--primary, #CB9224);
-font-family: Mukta;
-font-size: 16px;
-padding-left: 18px;
-padding-top: 5px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: capitalize;
-width: 100px;
-height: 40.625px;
+width: max-content;
+height: 30px;
+padding: 5px 20px;
+color: var(--color-primary);
 }
 
-.headerblog1 {
+.event-detail .headerblog1 {
     color: var(--color-primary);
 font-family: Mukta;
 font-size: 30px;
@@ -54,7 +50,7 @@ line-height: 129.2%; /* 41.344px */
 text-transform: capitalize;
 }
 
-.headerblog3{
+.event-detail .headerblog3{
     color: rgba(0, 0, 0, 0.80);
     font-family: Mukta;
     font-size: 25px;
@@ -63,7 +59,7 @@ text-transform: capitalize;
     line-height: 129.2%; /* 38.76px */
 }
 
-.headerblog2 {
+.event-detail .headerblog2 {
     color: rgba(0, 0, 0, 0.50);
     font-family: Mukta;
     font-size: 16px;
@@ -72,7 +68,7 @@ text-transform: capitalize;
     line-height: 129.2%; /* 25.84px */
 }
 
-.eventimg img {
+.event-detail .eventimg img {
     
     width: 600.455px;
 height: 800px;

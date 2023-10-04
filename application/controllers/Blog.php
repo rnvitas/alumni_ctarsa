@@ -16,8 +16,10 @@ class Blog extends CI_Controller
 
         $data['category'] = $this->blog->getAllType();
         // $data['kabaralumni'] = $this->info->getKabarAlumni();
-        // $data['all_blogs'] = $this->info->getAllBlog();
-        // $data['terbaru'] = $this->info->getTerbaru();
+        $data['all_blog'] = $this->blog->getAllBlog();
+        $data['populer'] = $this->blog->getPopuler();
+
+        $data['terbaru'] = $this->blog->getTerbaru();
 
 
 
@@ -26,17 +28,17 @@ class Blog extends CI_Controller
         $this->load->view('_parts/wrapper', $data);
     }
 
-    public function detail()
+    public function detail($id = "")
     {
-        // $id = $_GET['id'];
+        $id = $_GET['id'];
 
         // $data['populer'] = $this->blog->getPopuler();
-        // $data['category'] = $this->blog->getAllType();
-        // $data['detail_information'] = $this->blog->getInformation_by_id($id);
+        $data['category'] = $this->blog->getAllType();
+        $data['detail_blog'] = $this->blog->getBlog_by_id($id);
         $data['content']     = 'webview/blog/detail_view';
         $data['content_js'] = 'webview/blog/blog_js';
         $this->load->view('_parts/wrapper', $data);
-        // $this->add_count($id);
+        $this->add_count($id);
     }
 
     function add_count($id)
@@ -55,29 +57,7 @@ class Blog extends CI_Controller
         if ($check_visitor == false) {
             $cookie = array("name" => urldecode($id), "value" => "$ip", "expire" => time() + 7200, "secure" => false);
             $this->input->set_cookie($cookie);
-            $this->info->update_counter(urldecode($id));
+            $this->blog->update_counter(urldecode($id));
         }
-    }
-
-    function populer_section()
-    {
-
-        $data['all_populer'] = $this->info->getAllPopuler();
-        $data['populer'] = $this->info->getPopuler();
-        $data['category'] = $this->info->getAllType();
-        $data['content']     = 'webview/blog/popular_view';
-        $data['content_js'] = 'webview/blog/blog_js';
-        $this->load->view('_parts/wrapper', $data);
-    }
-
-
-    function newest_section()
-    {
-        $data['all_terbaru'] = $this->info->getAllTerbaru();
-        $data['terbaru'] = $this->info->getTerbaru();
-        $data['category'] = $this->info->getAllType();
-        $data['content']     = 'webview/blog/terbaru_view';
-        $data['content_js'] = 'webview/blog/blog_js';
-        $this->load->view('_parts/wrapper', $data);
     }
 }
