@@ -88,7 +88,7 @@
                          <div class="footer">
                              <div class="col-lg-12 d-flex justify-content-between ">
                                  <div class="actions d-flex">
-                                     <a href="javascript:void(0);" class="btn btn-outline-secondary" style="width:max-content;"><?php echo $a->category_name ?></a>
+                                     <h6><a href="javascript:void(0);" class="btn btn-outline-secondary" style="width:max-content;"><?php echo $a->category_name ?></a></h6>
                                      <p><?php echo $a->count ?> Kali dilihat</p>
                                  </div>
                                  <div class="action d-flex">
@@ -104,24 +104,10 @@
 
 
 
+                 <div class="col-lg-6">
+                     <?php echo $pagination; ?>
 
-                 <ul class="pagination pagination-primary">
-                     <li class="page-item">
-                         <a class="page-link" href="javascript:void(0);">Previous</a>
-                     </li>
-                     <li class="page-item active">
-                         <a class="page-link" href="javascript:void(0);">1</a>
-                     </li>
-                     <li class="page-item">
-                         <a class="page-link" href="javascript:void(0);">2</a>
-                     </li>
-                     <li class="page-item">
-                         <a class="page-link" href="javascript:void(0);">3</a>
-                     </li>
-                     <li class="page-item">
-                         <a class="page-link" href="javascript:void(0);">Next</a>
-                     </li>
-                 </ul>
+                 </div>
              </div>
 
 

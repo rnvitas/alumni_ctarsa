@@ -34,15 +34,18 @@ class Blog_m extends CI_Model
     }
 
 
-    public function getAllBlog()
+    public function getAllBlog($limit, $start)
     {
-        $this->db->select('tr.id, tr.*, m.category_name ');
+        $this->db->select('tr.id , tr.*, m.category_name ');
         $this->db->from('trans_blogs tr');
         $this->db->join('mast_cat_blogs m', 'tr.id_cat_blogs=m.id', 'left');
-        // $this->db->where('tr.id_cat_blogs', 3);
+        // $this->db->where('tr.id_cat_blogs', 3);s
         $this->db->where('tr.active', 1);
         $this->db->where('tr.publish', 1);
+        // $this->db->where('tr.id', $id);
+
         $this->db->order_by('date', 'desc');
+        $this->db->limit($limit, $start);
         $query = $this->db->get();
         return $query->result();
     }
@@ -58,6 +61,26 @@ class Blog_m extends CI_Model
         $this->db->limit('6');
         $query = $this->db->get();
         return $query->result();
+    }
+
+    public function getrecordAllCount()
+    {
+
+        $this->db->select('count(*) as allcount');
+        $this->db->from('trans_blogs tr');
+        $this->db->join('mast_cat_blogs m', 'tr.id_cat_blogs=m.id', 'left');
+        // $this->db->where('id_provinsi', $id);
+        $this->db->where('tr.active', 1);
+        $this->db->where('tr.publish', 1);
+        // $this->db->where('tr.id', $id);
+
+        // if ($search != '') {
+        //     $this->db->like('karyatulis_title', $search);
+        // }
+        $query = $this->db->get();
+        $result = $query->result_array();
+
+        return $result[0]['allcount'];
     }
 
 
