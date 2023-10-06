@@ -39,10 +39,10 @@
                          <!-- <div class="cat-blogs d-flex justify-content-start"> -->
                          <div class="col-lg-12 d-flex justify-content-start" style="overflow-x:scroll; overflow-y:hidden;" style data-aos="fade-up" data-aos-delay="100">
                              <div id="portfolio-flters" class=" d-flex justify-content-start cat-blog-card">
-                                 <button data-filter="*" class="filter-active cat-blog btn">All</button>
+                                 <button class="cat-blog filter-active  btn" onclick="filterSelection('all')">All</button>
 
                                  <?php foreach ($category as $cat) { ?>
-                                     <button data-filter=".filter-app" class="cat-blog btn"><?php echo $cat->category_name ?></button>
+                                     <button class="cat-blog btn" onclick="filterSelection('<?php echo $cat->category_name ?>')"><?php echo $cat->category_name ?></button>
 
                                  <?php } ?>
 
@@ -58,7 +58,7 @@
 
 
                  <?php foreach ($all_blog as $a) { ?>
-                     <div class="card-blog single_post" style="border-bottom:1px solid rgba(0, 0, 0, 0.10);" onclick="showDetail(<?php echo  $a->id ?>)">
+                     <div class="card-blog single_post filter-blogs <?php echo $a->category_name ?>" style="border-bottom:1px solid rgba(0, 0, 0, 0.10);" onclick="showDetail(<?php echo  $a->id ?>)">
                          <div class="body">
                              <div class="row">
                                  <div class="col-md-10">
@@ -187,3 +187,13 @@
              window.location = url
      }
  </script>
+ <style>
+     .filter-blogs {
+         display: none;
+     }
+
+
+     .show {
+         display: block;
+     }
+ </style>
