@@ -1,9 +1,9 @@
       <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
       <script>
           filterSelection("all")
+          //   url = "<?php echo site_url('Blog') ?>"
 
           function filterSelection(c) {
-              // url = "<?php echo site_url('Blog') ?>"
 
               var x, i;
               x = document.getElementsByClassName("filter-blogs");
@@ -11,9 +11,12 @@
               for (i = 0; i < x.length; i++) {
                   w3RemoveClass(x[i], "show");
                   if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                  // window.location = url;
               }
+
           }
+
+          //   window.location = url;
+
 
           function w3AddClass(element, name) {
               var i, arr1, arr2;
