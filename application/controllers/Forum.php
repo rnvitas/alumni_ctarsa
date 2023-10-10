@@ -19,6 +19,23 @@ class Forum extends CI_Controller
         $this->load->view('_parts/wrapper', $data);
     }
 
+    public function all_forum()
+    {
+
+        $data['content']     = 'webview/forum/all_forum_view';
+        $data['content_js'] = 'webview/forum/forum_js';
+        $this->load->view('_parts/wrapper', $data);
+    }
+
+    public function detail()
+    {
+
+        $data['content']     = 'webview/forum/forum_detail';
+        $data['content_js'] = 'webview/forum/forum_js';
+        $this->load->view('_parts/wrapper', $data);
+    }
+
+
     // public function save()
     // {
     //     $date = new DateTime('now', new DateTimeZone('Asia/Jakarta'));

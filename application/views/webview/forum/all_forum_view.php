@@ -53,40 +53,7 @@
             <div class="col-lg-12 d-flex container-forum">
                 <div class="col-lg-9 mt-3">
 
-                    <div class="forum-input">
 
-                        <div class="col-lg-12  d-flex justify-content-around wrappper-form-input">
-                            <div class="col-lg-2 d-flex justify-content-center align-items-center">
-                                <div class="card-profile">
-                                    <img class="img-fluid profile-image" src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8">
-                                <div class="card-forum">
-                                    <div class="container-fluid">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Add Topic for forum..">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-lg-2  d-flex justify-content-center align-items-center">
-                                <div class="card-forum ">
-                                    <div class="d-flex justify-content-center align-items-center btn-topic">
-                                        <button class="btn btn-primary">Add Topic</button>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-
-                    </div>
 
 
                     <div class="filter-forum" id="filter-forum">
