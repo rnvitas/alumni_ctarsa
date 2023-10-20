@@ -1,27 +1,29 @@
-  <section class="galeryhead text-center">
+  <section class="galeryhead-gallery text-center">
       <div class="wrapper-body">
-          <div class="card-live">
-              <div class="row">
-                  <div class="col-md-8 col-sm-12">
-                      <img class="img-fluid wrapper-image" src="<?php echo base_url() ?>assets/image/portfolio/portfolio-2.jpg" alt="">
-                  </div>
-                  <div class="col-md-4 col-sm-12 text-start wrapper-title">
-                      <h2 class="judulacara text-start">Acara hari ini</h2>
-                      <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                          rerum ut vero! Nemo culpa, vel eum
-                          eveniet ratione, voluptas ullam itaque possimus neque asperiores quisquam in laboriosam?
-                          Deserunt,
-                          facere natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-                          necessitatibus. Quam repellendus molestias fugiat recusandae qui, quibusdam voluptatibus aliquam
-                          maiores, odio minus architecto ipsam vel, deleniti deserunt illum veniam in.</p>
+          <div class="col-lg-12">
+              <div class="card-live">
+                  <div class="row col-md-12">
+                      <div class="col-md-8 col-sm-12">
+                          <img class="img-fluid wrapper-image" src="<?php echo base_url() ?>assets/image/portfolio/portfolio-2.jpg" alt="">
+                      </div>
+                      <div class="col-md-4 col-sm-12 text-start wrapper-title">
+                          <h2 class="judulacara text-start">Acara hari ini</h2>
+                          <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                              rerum ut vero! Nemo culpa, vel eum
+                              eveniet ratione, voluptas ullam itaque possimus neque asperiores quisquam in laboriosam?
+                              Deserunt,
+                              facere natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                              necessitatibus. Quam repellendus molestias fugiat recusandae qui, quibusdam voluptatibus aliquam
+                              maiores, odio minus architecto ipsam vel, deleniti deserunt illum veniam in.</p>
 
 
-                      <div class="d-flex align-items-center justify-content-center">
-                          <div class="col-lg-12 d-grid">
-                              <a href="#about" class="btn btn-primary">Watch now</a>
+                          <div class="d-flex align-items-center justify-content-center">
+                              <div class="col-lg-12 d-grid">
+                                  <a href="#about" class="btn btn-primary">Watch now</a>
+                              </div>
+
+
                           </div>
-
-
                       </div>
                   </div>
               </div>
@@ -35,9 +37,13 @@
 
               <div class="col-md-12">
 
-                  <div class="form">
+                  <div class="form" id="st">
                       <i class="bi bi-search"></i>
-                      <input type="text" class="form-control form-input" placeholder="Search anything...">
+                      <?php if ($this->uri->segment(2) == 'search') { ?>
+                          <input type="text" class="form-control form-input" id="search" value="<?php echo $this->input->get('st') ?>">
+                      <?php } else { ?>
+                          <input type="text" class="form-control form-input" id="search" placeholder="Search anything...">
+                      <?php } ?>
                       <span class="left-pan"><i class="fa fa-microphone"></i></span>
                   </div>
 
@@ -50,17 +56,22 @@
   </section>
 
   <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
+      <div class="wrapper-body" data-aos="fade-up">
 
           <div class="row" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-12 d-flex justify-content-center">
-                  <ul id="portfolio-flters">
-                      <li data-filter="*" class="filter-active">All</li>
+                  <ul id="portfolio-filters">
+                      <!-- <li data-filter="*" class="filter-active" data-value="all">All</li> -->
+                      <input type="button" class="btn filter-information filter-active" value="all" id="type0" />
 
-                      <?php foreach ($type_gallery as $tipe) { ?>
-                          <li data-filter=".filter-app"><?php echo $tipe->name ?></li>
+                      <?php $i = 1;
+                        foreach ($type_gallery as $tipe) { ?>
 
-                      <?php } ?>
+
+                          <input type="button" class="btn filter-information" value="<?php echo $tipe->name ?>" id="type<?php echo $i; ?>" />
+
+                      <?php $i++;
+                        } ?>
                       <!-- <li data-filter=".filter-app">App</li>
                       <li data-filter=".filter-card">Card</li>
                       <li data-filter=".filter-web">Web</li> -->
@@ -74,91 +85,72 @@
               <p class="text-center">lorem jsdssk</p>
           </div>
 
+
           <div class="gallery">
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
-                      <figcaption>Picture of a few dogs having a rest and sleeping.</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Eiffel_Tower_Vertical.JPG" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
-                      <figcaption>Picture of a few dogs having a rest and sleeping.</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-6.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-7.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
-                      <figcaption>Picture of a few dogs having a rest and sleeping.</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="https://images.pexels.com/photos/6797836/pexels-photo-6797836.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="https://images.unsplash.com/photo-1544376798-89aa6b82c6cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmVydGljYWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
-              <div class="gallery-item">
-                  <figure>
-                      <img src="assets/image/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
-                      <figcaption>Caption of the pic</figcaption>
-                  </figure>
-              </div>
+
+
+              <?php foreach ($getFile as $gf) { ?>
+                  <?php if ($gf->type_file == 'jpeg' || $gf->type_file == 'jpg' || $gf->type_file == 'png') { ?>
+                      <div class="gallery-item " onclick="showDetail(<?php echo $gf->id_header ?>)">
+                          <figure>
+                              <img src="../../../../uploadFile_alumni/<?php echo $gf->file ?>" class="img-fluid" alt="" />
+                              <figcaption>
+
+                              </figcaption>
+                              <div class="title-galery">
+                                  <p><?php echo $gf->title ?></p>
+                              </div>
+                          </figure>
+                      </div>
+                  <?php } else if ($gf->type_file == 'mp4' || $gf->type_file == 'mkv' || $gf->type_file == '3gp') { ?>
+                      <div class="gallery-item " onclick="showDetail(<?php echo $gf->id_header ?>)">
+                          <figure>
+                              <video controls>
+                                  <source src="../../../../uploadFile_alumni/<?php echo $gf->file ?>" type="video/mp4">
+                                  Your browser does not support the video tag.
+                              </video>
+                              <figcaption>
+
+                              </figcaption>
+                              <div class="title-galery">
+                                  <p><?php echo $gf->title ?></p>
+                              </div>
+                          </figure>
+                      </div>
+                  <?php } else { ?>
+                      <div class="gallery-item " onclick="showDetail(<?php echo $gf->id_header ?>)">
+                          <figure>
+                              <object data="<?php echo $gf->link ?>" type="application/x-shockwave-flash">
+                                  <param name="src" value="<?php echo $gf->link ?>" />
+                              </object>
+                              <!-- <iframe src="<?php echo $gf->link ?>" allowfullscreen></iframe> -->
+                              <figcaption>
+
+                              </figcaption>
+                              <div class="title-galery">
+                                  <p><?php echo $gf->title ?></p>
+                              </div>
+                          </figure>
+                      </div>
+              <?php }
+                } ?>
+          </div>
+
+
+      </div>
+      <div class="wrapper-body d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
+
+              <?php echo $pagination; ?>
           </div>
       </div>
   </section>
+
+  <script>
+      function showDetail(id) {
+          alert(id);
+          url = "<?php echo base_url(); ?>gallery/detail/?id=" + id,
+
+              window.location = url
+      }
+  </script>

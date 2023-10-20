@@ -6,7 +6,7 @@
 
                 <div class="card">
                     <div class="judul d-flex justify-content-start align-items-center">
-                        <p class="card-title mt-1"><?php echo $d->category_name ?></p>
+                        <p class="card-title "><?php echo $d->category_name ?></p>
                         <h4 class="card-judul ms-3 "><?php echo $d->title ?></h4>
                     </div>
                     <p class="card-date mt-2"><?php echo $d->date ?> | <?php echo $d->post_by ?> | <i class="bi bi-eye pe-1"></i> <?php echo $d->count ?> kali dilihat</p>

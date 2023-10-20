@@ -20,24 +20,34 @@ body {
 # galeryhead
 --------------------------------------------------------------*/
 
-.galeryhead {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(99deg, #337CCF -10.35%, #FFC436 111.7%);
-    padding-top: 70px;
-    padding-bottom: 70px;
-    overflow: hidden;
+
+.galeryhead-blog {
+  width: 100%;
+  height: 500px;
+  background: url("../image/Group\ 164\ \(2\).png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
-.blogtext{
+.galeryhead-blog .blogtext{
     padding: 20px;
     color: var(--color-secondary);
+    margin-top:2rem!important;
 
 }
 
-.blogtext h1{
+.galeryhead-blog  .blogtext h1{
   font-weight: 700;
 
+}
+
+.galeryhead-blog .blogtext{
+    padding-left:0px!important;
+    padding-top:0px!important;
 }
 
 
@@ -122,7 +132,7 @@ body {
     margin-bottom: 30px;
     position: relative;
     width: 100%;
-    background-color: #F3F3F3;
+    background-color: #f5f5f5;
   }
 
 

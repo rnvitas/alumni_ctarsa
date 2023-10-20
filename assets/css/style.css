@@ -1,20 +1,19 @@
-
 @import url(../../assets/css/galery.css);
-/* @import url(../../assets/css/galerydetails.css); */
+@import url(../../assets/css/galerydetails.css);
 @import url(../../assets/css/information.css);
 @import url(../../assets/css/informationdetails.css);
 @import url(../../assets/css/blog.css);
 @import url(../../assets/css/blogdetails.css);
 @import url(../../assets/css/calender.css);
 @import url(../../assets/css/eventdetails.css);
-@import url(../../assets/css/eventdetails.css);
 @import url(../../assets/css/repository.css);
 @import url(../../assets/css/repositorydetails.css);
-
+@import url(../../assets/css/contactus.css);
+@import url(../../assets/css/login.css);
+@import url(../../assets/css/signup.css);
 
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-
 
 :root {
     --primary: #CB9224 !important;
@@ -24,6 +23,98 @@
     --grey: #f5f5f5;
     --light-grey: #acacac;
 }
+
+
+/* pagination */
+.modal-4 a {
+    margin: 0 5px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-color: rgb(203, 146, 36, 0.25);
+}
+
+.modal-4 a.prev {
+    -moz-border-radius: 50px 0 0 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px 0 0 50px;
+    width: 100px;
+    background-color: var(--primary);
+}
+
+.modal-4 a.next {
+    -moz-border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 50px 50px 0;
+    width: 100px;
+    background-color: var(--primary);
+}
+
+.modal-4 a:hover {
+    background-color: var(--primary);
+}
+
+.modal-4 a.active,
+.modal-4 a:active {
+    background-color: var(--primary);
+}
+
+
+.active>.page-link,
+.page-link.active {
+    z-index: 3;
+    color: white !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    border-radius: 35px !important;
+}
+
+.page-link {
+    padding: 10px 20px !important;
+    margin-left: 15px !important;
+    border-radius: 35px !important;
+    background-color: rgb(203, 146, 36, 0.25) !important;
+    border-color: rgb(203, 146, 36, 0.25) !important;
+    color: var(--primary) !important;
+
+}
+
+.page-link a {
+    color: var(--primary) !important;
+
+}
+
+.page-link>a[rel="prev"] {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+    padding: 10px 35px !important;
+    border-radius: 35px !important;
+    position: absolute !important;
+    margin-top: -0.7rem !important;
+    margin-left: -4.5rem !important;
+}
+
+.page-link>a[rel="next"] {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+    padding: 10px 35px !important;
+    margin-left: -1.7rem !important;
+    border-radius: 35px !important;
+    width: max-content !important;
+    position: absolute !important;
+    margin-top: -0.7rem !important;
+
+}
+
+
+
+/* pagination */
 
 body {
     /* shafa */
@@ -63,6 +154,20 @@ h6 {
 
 }
 
+/* shafa */
+.text-gold {
+    color: #CB9224;
+    font-weight: 500;
+}
+
+.text-gold:hover {
+    color: #9A8743;
+    font-weight: 500;
+}
+
+/* shafa */
+
+
 /* button */
 
 .btn.btn-primary {
@@ -74,7 +179,8 @@ h6 {
     border-radius: 100px !important;
     background: var(--primary) !important;
     color: white;
-    border: 2px solid var(--primary) !important
+    border: 2px solid var(--primary) !important;
+    width: max-content !important;
 }
 
 .btn.btn-primary:hover {
@@ -93,19 +199,21 @@ h6 {
     border: 2px solid var(--primary) !important;
 }
 
-/* .path:hover{
-    stroke:white!important;
-    fill:none;
-    pointer-events: all;
+/* .btn.btn-outline-primary:hover {
+    background: var(--hover) !important;
+    color: white !important;
+    border: 2px solid var(--hover) !important;
+
 } */
 
-.btn.btn-outline-primary path:visited{
-    stroke:white!important;
-    fill:none;
+
+.btn.btn-outline-primary path:visited {
+    stroke: white !important;
+    fill: none;
     pointer-events: all;
 }
 
-.btn.btn-outline-primary:hover{
+.btn.btn-outline-primary:hover {
     background: var(--hover) !important;
     color: white !important;
     border: 2px solid var(--hover) !important;
@@ -113,44 +221,45 @@ h6 {
 
 }
 
-.btn.btn-outline-primary:hover path{
-    stroke:white!important;
-    fill:none;
+.btn.btn-outline-primary:hover path {
+    stroke: white !important;
+    fill: none;
     pointer-events: all;
-} 
-
-.btn-outline-primary.btnnya-active path{
-   stroke:white!important;
-    fill:none!important;
-    pointer-events: all!important;
 }
 
-.btn-outline-primary.btnnya-active{
+.btn-outline-primary.btnnya-active path {
+    stroke: white !important;
+    fill: none !important;
+    pointer-events: all !important;
+}
+
+.btn-outline-primary.btnnya-active {
     background: var(--primary) !important;
-    color: white!important;
+    color: white !important;
     border: 2px solid var(--primary) !important;
-  
+
 }
 
-.btn-outline-primary.btnnya-actived{
+.btn-outline-primary.btnnya-actived {
     background: var(--primary) !important;
-    color: white!important;
+    color: white !important;
     border: 2px solid var(--primary) !important;
-  
+
 }
 
 
 
 
-.btnnya-active path{
+.btnnya-active path {
     background: var(--primary) !important;
     color: white;
     border: 2px solid var(--primary) !important;
-    stroke:var(--primary)!important;
-    fill:none;
+    stroke: var(--primary) !important;
+    fill: none;
     pointer-events: all;
 
 }
+
 /* button */
 
 
@@ -171,7 +280,7 @@ h6 {
 }
 
 .navigation .navbar {
-    /* height: 90px!important; */
+    /* height: 90px; */
     width: 100% !important;
     /* width: 1920px; */
     border: 1px solid rgba(255, 255, 255, 0.01);
@@ -179,7 +288,7 @@ h6 {
     background-color: #FFF;
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
-    padding: 10px auto;
+    padding: 0 auto;
     flex-shrink: 0;
     font-weight: 500 !important;
     /* border-radius:100px; */
@@ -219,6 +328,24 @@ h6 {
 
 /* navigation */
 /* header forum */
+.card-action-topic .icon-reply {
+    border-radius: 30px !important;
+    background: rgba(203, 146, 36, 0.10) !important;
+    color: var(--color-primary) !important;
+    display: inline-flex !important;
+    padding: 5px 30px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    text-align: center !important;
+    font-size: 14px;
+}
+
+
+/* .card-action-topic .icon-reply:hover{
+background-color:var(--color-primary);
+color:#f5f5f5;
+} */
 
 .forum {
     width: 100%;
@@ -236,8 +363,9 @@ h6 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 350px;
-    background: linear-gradient(99deg, #337CCF -10.35%, #FFC436 111.7%);
+    height: 500px;
+    background: url("../image/banner_forum.png") top center no-repeat;
+    background-size: cover;
 
 }
 
@@ -365,7 +493,7 @@ h6 {
     border-radius: 100%;
     width: 80px;
     height: 80px;
-    object-fit: contain;
+    object-fit: cover;
     margin: 25px 38px;
     position: absolute;
     margin-top: -1.5rem;
@@ -532,3 +660,97 @@ h6 {
 }
 
 /* header forum */
+
+/*--------------------------------------------------------------
+# Footer Desktop
+--------------------------------------------------------------*/
+#footer {
+    color: #fff;
+    font-size: 14px;
+    background: none;
+    margin-top: 5%;
+}
+
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+    padding-top: 10px;
+}
+
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    /* Menggeser elemen ke kanan */
+}
+
+#footer .footer-top .footer-links ul i {
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    line-height: 1;
+
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .credits {
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+#footer .footer-top .footer-links .footerbtn {
+    padding-right: 20px;
+}
+
+.get-footer-btn {
+    margin-left: 30px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    height: 45px;
+    border-radius: 100px;
+    padding: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid #CB9224;
+}
+
+
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: var(--color-primary);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 0px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: 0.3s;
+    right: 20px;
+}
+
+#footer .social-links a:hover {
+    background: var(--color-third);
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    align-items: center;
+    text-align: center;
+    color: var(--color-primary);
+}

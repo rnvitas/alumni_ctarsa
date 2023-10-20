@@ -41,11 +41,24 @@ class Repository_m extends CI_Model
         $this->db->where('tr.id', $id);
         $this->db->where('tr.active', 1);
         $this->db->where('tr.publish', 1);
-        // $this->db->order_by('date', 'desc');
         $query = $this->db->get();
         return $query->result();
     }
 
+    public function getRepository_lainnya($id)
+    {
+        $this->db->select('tr.* ');
+        $this->db->from('trans_repository tr');
+        // $this->db->join('mast_cat_repository m', 'tr.id_cat_repository=m.id', 'left');
+        $this->db->where('tr.id !=', $id);
+        $this->db->where('tr.active', 1);
+        $this->db->where('tr.publish', 1);
+        // $this->db->order_by('date', 'desc');
+        $this->db->limit(5);
+
+        $query = $this->db->get();
+        return $query->result();
+    }
 
 
     public function getPopuler()

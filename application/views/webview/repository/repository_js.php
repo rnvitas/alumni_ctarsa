@@ -1,6 +1,6 @@
 <script>
-    $('.slider-repo').slick({
-        slidesToShow: 2,
+    $('.slider-repos').slick({
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,

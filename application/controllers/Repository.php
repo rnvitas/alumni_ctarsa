@@ -23,11 +23,13 @@ class Repository extends CI_Controller
 
     public function detail()
     {
-        // $id = $_GET['id'];
+        $id = $_GET['id'];
 
         // // $data['populer'] = $this->blog->getPopuler();
         // $data['category'] = $this->blog->getAllType();
-        // $data['detail_blog'] = $this->blog->getBlog_by_id($id);
+        $data['detail'] = $this->repo->getRepository_by_id($id);
+        $data['lainnya'] = $this->repo->getRepository_lainnya($id);
+
         $data['content']     = 'webview/repository/repository_detail';
         $data['content_js'] = 'webview/repository/repository_js';
         $this->load->view('_parts/wrapper', $data);

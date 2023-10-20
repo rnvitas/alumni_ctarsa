@@ -1,4 +1,4 @@
-<section class="galeryhead">
+<section class="galeryhead-repository">
 
     <div class="blogtext wrapper-body text-center ">
         <h1>Repository</h1>
@@ -31,88 +31,61 @@
 <section id="repositorydetails" class="repositorydetails">
     <div class="wrapper-body">
         <div class="container-detail">
-            <div class="row">
-                <div class="leftside col-lg-4">
-                    <img class="img-fluid" src="<?php echo base_url() ?>assets/image/Group 33811.png" alt=" " style="width: 60%;">
-                </div>
-                <div class="leftside col-lg-8">
-                    <h3>Judul keren pokoknya</h3>
-                    <p>Nama Penulis</p>
-                    <div class="deskripsi d-flex ">
-                        <div class="rujuk d-flex">
-                            <p>Dirujuk: </p>
-                            <p>12 kali</p>
+            <?php foreach ($detail as $d) { ?>
+                <div class="row">
+                    <div class="leftside col-lg-4">
+                        <img class="img-fluid img-detail" src=" <?php echo base_url(); ?>./../../../uploadFile_alumni/repository/<?php echo $d->thumbnail_image; ?>" alt=" " style="width: 60%;">
+                    </div>
+                    <div class="leftside col-lg-8">
+                        <h3 style=" font-weight:700"><?php echo $d->title ?></h3>
+                        <p><?php echo $d->author ?></p>
+                        <div class="deskripsi d-flex ">
+                            <div class="rujuk d-flex">
+                                <p class="me-1" style="color:#cb9224; font-weight:700">Dirujuk: </p>
+                                <p><?php echo $d->count ?> kali</p>
+                            </div>
+                            <div class="Pagecount d-flex">
+                                <p class="me-1" style="color:#cb9224; font-weight:700">Page Count: </p>
+                                <p><?php echo $d->page_count ?> halaman</p>
+                            </div>
+                            <div class="tahun d-flex">
+                                <p class="me-1" style="color:#cb9224; font-weight:700">Tahun: </p>
+                                <p><?php echo $d->date ?></p>
+                            </div>
                         </div>
-                        <div class="Pagecount d-flex">
-                            <p>Page Count: </p>
-                            <p>12 halaman</p>
-                        </div>
-                        <div class="tahun d-flex">
-                            <p>Tahun: </p>
-                            <p>2020</p>
+                        <p><?php echo $d->description ?></p>
+                        <div class="ineteraksi d-flex">
+                            <button type="button" class="btns btn btn-primary me-2"><i class="bi bi-book-half"></i>Baca</button>
+                            <button type="button" class="btns btn btn-primary"><i class="bi bi-download"></i>Unduh</button>
+                            <!-- <button type="button" class="btn btn-primary"><i class="bi bi-printer"></i>Cetak</button>
+                        <button type="button" class="btn btn-primary"><i class="bi bi-quote"></i>Kutip</button> -->
                         </div>
                     </div>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, ligula id semper pellentesque, orci magna maximus ligula, vel rhoncus purus enim nec ex. Fusce finibus velit metus, sit amet viverra lorem faucibus pulvinar. Suspendisse pretium dolor id sem efficitur, sed auctor ante elementum. Morbi rutrum venenatis massa, ac fringilla erat dignissim vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam non sapien varius, sagittis purus id, lobortis massa. Vivamus blandit...”</p>
-                    <div class="ineteraksi d-flex">
-                        <button type="button" class="btns btn btn-primary"><i class="bi bi-book-half"></i>Baca</button>
-                        <button type="button" class="btns btn btn-primary"><i class="bi bi-download"></i>Unduh</button>
-                        <button type="button" class="btn btn-primary"><i class="bi bi-printer"></i>Cetak</button>
-                        <button type="button" class="btn btn-primary"><i class="bi bi-quote"></i>Kutip</button>
-                    </div>
                 </div>
-            </div>
+            <?php } ?>
+
         </div>
     </div>
 
     <div class="wrapper-body">
         <div class="bacajuga col-lg-12">
             <div class="d-flex justify-content-between">
-                <p>Baca Juga</p>
-                <button type="button" class="btns btn btn-primary">Baca juga</button>
+                <p style="color:#cb9224; font-weight:700">Baca Juga</p>
+                <button type="button" class="btns btn btn-primary">lihat semua</button>
             </div>
         </div>
         <div class="readmore mt-3">
-            <div class="d-flex justify-content-start slider-repo">
-                <div class="card-details">
-                    <img src="<?php echo base_url() ?>assets/image/Group 33811.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor </h5>
-                        <p class="card-text">Adib Dwi kusuma</p>
-                        <p class="cardview">dirujuk 12 kali</p>
+            <div class="d-flex justify-content-center slider-repo">
+                <?php foreach ($lainnya as $l) { ?>
+                    <div class="card-details ">
+                        <img src=" <?php echo base_url(); ?>./../../../uploadFile_alumni/repository/<?php echo $l->thumbnail_image; ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $l->title; ?> </h5>
+                            <p class="card-text"><?php echo $l->author; ?></p>
+                            <p class="cardview">dirujuk <?php echo $l->count; ?> kali</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-details">
-                    <img src="<?php echo base_url() ?>assets/image/Group 33811.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor </h5>
-                        <p class="card-text">Adib Dwi kusuma</p>
-                        <p class="cardview">dirujuk 12 kali</p>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <img src="<?php echo base_url() ?>assets/image/Group 33811.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor </h5>
-                        <p class="card-text">Adib Dwi kusuma</p>
-                        <p class="cardview">dirujuk 12 kali</p>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <img src="<?php echo base_url() ?>assets/image/Group 33811.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor </h5>
-                        <p class="card-text">Adib Dwi kusuma</p>
-                        <p class="cardview">dirujuk 12 kali</p>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <img src="<?php echo base_url() ?>assets/image/Group 33811.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor </h5>
-                        <p class="card-text">Adib Dwi kusuma</p>
-                        <p class="cardview">dirujuk 12 kali</p>
-                    </div>
-                </div>
+                <?php } ?>
 
             </div>
         </div>

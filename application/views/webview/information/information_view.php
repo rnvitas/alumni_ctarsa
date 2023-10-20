@@ -9,28 +9,27 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="slick">
-                            <div class="item">
-                                <img class="bg" src="https://literasictarsa.id/assets/images/asset_landing/hs03.jpg">
-                            </div>
-                            <div class="item">
-                                <img class="bg" src="https://literasictarsa.id/assets/images/asset_landing/hs01.jpg">
+                            <?php foreach ($banner as $b) { ?>
+                                <div class="item">
+                                    <img id="myImg<?php echo $b->id ?>" class="bg" src="<?php echo base_url(); ?>uploads/information/<?php echo $b->thumbnail_image; ?>">
+                                </div>
+                            <?php } ?>
 
-                            </div>
-                            <div class="item">
-                                <img class="bg" src="https://literasictarsa.id/assets/images/asset_landing/hs03.jpg">
 
-                            </div>
-                            <div class="item">
-                                <img class="bg" src="https://literasictarsa.id/assets/images/asset_tentang_kami/arsagigi/6A.jpg">
-
-                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="card-arrow-info">
+                <button class="prevbutton-information"><i class="bi bi-chevron-left"></i></button>
+                <button class="nextbutton-information"><i class="bi bi-chevron-right"></i></button>
+            </div>
+
         </div>
+
+
     </div>
 
 
@@ -41,41 +40,62 @@
             <div class="container-search d-flex justify-content-center mb-5">
 
                 <div class="col-lg-10  search-filter d-flex justify-content-center align-items-center">
-                    <div class="col-lg-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
-                            <path d="M24.3333 24.3333L31 31M1 14.3333C1 17.8696 2.40476 21.2609 4.90524 23.7614C7.40573 26.2619 10.7971 27.6667 14.3333 27.6667C17.8696 27.6667 21.2609 26.2619 23.7614 23.7614C26.2619 21.2609 27.6667 17.8696 27.6667 14.3333C27.6667 10.7971 26.2619 7.40573 23.7614 4.90524C21.2609 2.40476 17.8696 1 14.3333 1C10.7971 1 7.40573 2.40476 4.90524 4.90524C2.40476 7.40573 1 10.7971 1 14.3333Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div class="col-lg-7">
 
-                        <div class="search-bar">
+
+
+                    <div class="col-lg-10">
+
+                        <div class="search-bar form" id="st_ns">
                             <!-- <div class="icon-search"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                                 <path d="M24.3324 24.7529L30.999 31.4196M0.999023 14.7529C0.999023 18.2891 2.40378 21.6805 4.90427 24.181C7.40475 26.6815 10.7961 28.0862 14.3324 28.0862C17.8686 28.0862 21.26 26.6815 23.7604 24.181C26.2609 21.6805 27.6657 18.2891 27.6657 14.7529C27.6657 11.2167 26.2609 7.82528 23.7604 5.3248C21.26 2.82431 17.8686 1.41956 14.3324 1.41956C10.7961 1.41956 7.40475 2.82431 4.90427 5.3248C2.40378 7.82528 0.999023 11.2167 0.999023 14.7529Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg></div> -->
+                            <svg id="iconnya-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                                <path d="M24.3333 24.3333L31 31M1 14.3333C1 17.8696 2.40476 21.2609 4.90524 23.7614C7.40573 26.2619 10.7971 27.6667 14.3333 27.6667C17.8696 27.6667 21.2609 26.2619 23.7614 23.7614C26.2619 21.2609 27.6667 17.8696 27.6667 14.3333C27.6667 10.7971 26.2619 7.40573 23.7614 4.90524C21.2609 2.40476 17.8696 1 14.3333 1C10.7971 1 7.40573 2.40476 4.90524 4.90524C2.40476 7.40573 1 10.7971 1 14.3333Z" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <?php if ($this->uri->segment(2) == 'newest_search') { ?>
 
+                                <input type="text" class="form-control form-input" id="search" value="<?php echo $this->input->get('st_n') ?>">
+                            <?php } else { ?>
+                                <input class="form-control form-input" type="text" id="search" placeholder="Search...">
+                            <?php } ?>
 
-                            <input class="form-control" type="text" placeholder="Search...">
                         </div>
                     </div>
 
 
-                    <div class="col-lg-2">
+                    <!-- <div class="col-lg-2">
                         <select class="select2 js-example-basic-single">
                             <option>Terbaru</option>
                             <option>Terpopuler</option>
 
                         </select>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="portfolio-flters">
-                        <button class="btn filter-information filter-active"><a style="text-decoration:none;" class="text-dark" href="<?php echo base_url('information') ?>">All</a></button>
-                        <?php foreach ($category as $row) { ?>
-                            <button class="filter-information btn"><?php echo $row->category_name ?></button>
+                    <ul id="portfolio-filters">
+
+                        <!-- <li data-filter="*" class="filter-active"><a class="text-dark" href="<?php // echo base_url('information') 
+                                                                                                    ?>">All</a></li> -->
+                        <?php
+                        if ($this->input->get('cat_n') == 'All' || empty($this->input->get('cat_n'))) { ?>
+                            <input type="button" value="All" class="btn filter-information filter-active" id="type0" />
+                        <?php } else { ?>
+                            <input type="button" value="All" class="btn filter-information" id="type0" />
+                        <?php } ?>
+                        <?php $i = 1;
+                        foreach ($category as $row) {
+                            if ($this->input->get('cat_n') == $row->category_name) { ?>
+                                <input type="button" class="btn filter-information filter-active" value="<?php echo $row->category_name ?>" id="type<?php echo $i; ?>" />
+                            <?php } else { ?>
+                                <input type="button" class="btn filter-information" value="<?php echo $row->category_name ?>" id="type<?php echo $i; ?>" />
+                            <?php }
+                            ?>
+
+
 
                         <?php } ?>
 
@@ -222,12 +242,136 @@
     </section>
 
 
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
     <!-- End Populer section -->
 
 
 
 
     <style>
+        #myImg {
+            /* border-radius: 5px; */
+            cursor: pointer;
+            /* transition: 0.3s; */
+        }
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1000;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+
+        #iconnya-search {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+
+            margin-left: 2rem;
+            margin-top: 1.2rem;
+        }
+
+        #search {
+            text-align: left;
+            padding: 1rem 3rem;
+        }
+
         .hero-information {
             margin-top: 5rem;
             /* margin-bottom: 5rem; */
@@ -350,6 +494,32 @@
         function showTerbaru() {
             url = "<?php echo base_url('Information/newest_section'); ?>"
             window.location = url
+        }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        <?php foreach ($banner as $b) { ?>
+            var img<?php echo $b->id; ?> = document.getElementById("myImg<?php echo $b->id; ?>");
+        <?php } ?>
+
+        var modalImg = document.getElementById("img01");
+
+        <?php foreach ($banner as $b) { ?>
+            img<?php echo $b->id; ?>.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                // captionText.innerHTML = this.alt;
+            }
+        <?php } ?>
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

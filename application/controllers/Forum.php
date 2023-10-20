@@ -9,11 +9,11 @@ class Forum extends CI_Controller
     {
         parent::__construct();
 
-        // $this->load->model('Model', 'home');
+        $this->load->model('Forum_m', 'forum');
     }
     public function index()
     {
-
+        $data['threads']     = $this->forum->getThreads_me();
         $data['content']     = 'webview/forum/forum_view';
         $data['content_js'] = 'webview/forum/forum_js';
         $this->load->view('_parts/wrapper', $data);
@@ -21,7 +21,7 @@ class Forum extends CI_Controller
 
     public function all_forum()
     {
-
+        $data['threads']     = $this->forum->getThreads();
         $data['content']     = 'webview/forum/all_forum_view';
         $data['content_js'] = 'webview/forum/forum_js';
         $this->load->view('_parts/wrapper', $data);

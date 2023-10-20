@@ -53,7 +53,7 @@
 /*--------------------------------------------------------------
 # Get Startet Button
 --------------------------------------------------------------*/
-.get-started-btn {
+/* .get-started-btn {
   margin-left: 30px;
   background: var(--color-secondary);
   color: var(--color-primary);
@@ -84,7 +84,7 @@
 .get-started-btn:hover {
   background: #111111;
   color: #fff;
-}
+} */
 
 @media (max-width: 992px) {
   .get-started-btn {
@@ -105,7 +105,7 @@
 .hero {
   width: 100%;
   height: 95vh;
-  background: url("../image/clients/DSC02353.JPG") top center no-repeat;
+  background: url("../image/hero.png") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 82px;
@@ -131,9 +131,9 @@
   color: #CB9224;
 }
 
-.herotext {
+/* .herotext {
   margin-bottom: 10%;
-}
+} */
 
 
 .hero p {
@@ -199,6 +199,48 @@
   #hero {
     height: 120vh;
   }
+}
+
+.btn.btn-white-side {
+  padding: 0px 0px 0px 15px !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border-radius: 100px !important;
+  color: var(--color-default) !important;
+  background-color: var(--color-primary);
+  border: none !important;
+  line-height: 26px;
+}
+
+.white-dot {
+  height: 28px;
+  width: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.yellow-dot {
+  height: 16px;
+  width: 16px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 15px;
+}
+
+.btn.btn-follow-us {
+  padding: 10px 20px !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border-radius: 100px !important;
+  color: #fff !important;
+  background-color: grey;
+  opacity: 0.9;
+  border: none !important;
+  line-height: 26px;
 }
 
 /*--------------------------------------------------------------
@@ -272,9 +314,9 @@
   padding-top: 20px;
 }
 
-.aboutcard .aset3 {
+/* .aboutcard .aset3 {
   z-index: -1;
-}
+} */
 
 .hover-info {
   position: absolute;
@@ -329,6 +371,45 @@
   }
 }
 
+.aboutcard h3 {
+  font-weight: bold;
+  /* padding-top: 20px;
+  margin-left: 30px; */
+  color: var(--color-secondary);
+}
+
+.btn-get-about {
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 90px;
+  margin-left: 65%;
+  margin-top: 3%;
+  transition: 0.5s;
+  color: var(--color-primary);
+  background: var(--color-secondary);
+}
+
+.btn-get-about:hover {
+  background: var(--hover) !important;
+  color: white !important;
+  /* shafa */
+  /* shafa */
+}
+
+.btn-get-about .bi-chevron-right {
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 5px;
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -357,7 +438,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  /* background: #e03a3c; */ /*vita */
+  background: #e03a3c;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -1076,116 +1157,165 @@ span.popup {
   }
 }
 
-
 /*--------------------------------------------------------------
-# Footer
+# donation section
 --------------------------------------------------------------*/
-#footer {
-  color: #fff;
-  font-size: 14px;
-  background: none;
-  margin-top: 5%;
+
+
+.donation {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/image 46.png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 70px;
 }
 
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fff;
+.donationtext {
+  padding-top: 20px;
+}
+
+.donasip {
+  color: var(--hover);
+  font-size: 20px;
+}
+
+.donationtext h2 {
+  padding-top: 2px;
+  font-weight: bold;
+}
+
+.donasis {
+  padding-top: 10px;
 }
 
 
 
-
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
+.donations .card {
+  width: 370px;
+  height: 350px;
+  border: solid 2px #fff;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 30px;
   padding: 20px;
-  margin: 20px;
-  display: flex;
-  justify-content: flex-end;
-  /* Menggeser elemen ke kanan */
+  z-index: 18;
 }
 
-#footer .footer-top .footer-links ul i {
-  padding: 10px;
-  color: black;
-  font-size: 18px;
-  line-height: 1;
-
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
+.donations .card .row {
   align-items: center;
+  justify-content: center;
 }
 
-
-
-#footer .footer-top .footer-links ul a {
-  color: black;
-  transition: 0.3s;
-  line-height: 1;
+.rekening .norek {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
 }
 
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: black;
+.rekening .atasnama {
+  font-size: 12px;
+  padding: 0;
 }
 
-
-
-
-
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-}
-
-#footer .footer-top .footer-links .footerbtn {
-  padding-right: 20px;
-}
-
-.get-footer-btn {
-  margin-left: 30px;
-  background: var(--color-secondary);
-  color: var(--color-primary);
-  height: 45px;
-  border-radius: 100px;
-  padding: 10px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  font-weight: 600;
-  display: inline-block;
-  border: 2px solid #CB9224;
-}
-
-
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #2b2b2b;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
+.rekening .norek {
+  margin-bottom: 0%;
   margin-right: 0px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  transition: 0.3s;
-  right: 20px;
 }
 
-#footer .social-links a:hover {
-  background: var(--color-primary);
-  color: #fff;
-  text-decoration: none;
+.rekening {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
-.copyright {
-  align-items: center;
-  text-align: center;
+.mega img {
+  width: 140px;
+  height: 90px;
+}
+
+.donations .card .don3 {
+  border-left: 3px solid;
+  height: 40%;
+  margin: 0%;
+}
+
+.btn-qris {
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 90px;
+  border: none;
+  transition: 0.5s;
   color: var(--color-primary);
+  background: rgba(203, 146, 36, 0.1);
+}
+
+.btn-qris1 {
+  font-family: "Mukta", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: 0.5s;
+  color: var(--color-primary);
+  width: 153.786px;
+  height: 60px;
+  border: none;
+  background: rgba(203, 146, 36, 0.1);
+}
+
+.btn-qris,
+.btn-qris1 {
+  margin-right: 10px;
+  /* Atur margin kanan untuk memberikan jarak antara tombol */
+}
+
+.rules p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.kegiatan {
+  color: #cb9224;
+  background-color: rgba(203, 146, 36, 0.1);
+  border-radius: 30px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.prevbutton,
+.nextbutton {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 60%;
+  width: 40px;
+  /* Adjust button width as needed */
+  height: 40px;
+  /* Adjust button height as needed */
+  background-color: #cb9224;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 20;
+  border: none;
+}
+
+.prevbutton {
+  left: 20px;
+  /* Adjust the left position of the previous button */
+}
+
+.nextbutton {
+  right: 20px;
+  /* Adjust the right position of the next button */
 }

@@ -1,175 +1,263 @@
+:root {
+  --color-default: #222222;
+  --color-primary: #CB9224;
+  --color-secondary: #fff;
+  --color-third: #9a8743;
+}
+
 body {
-    font-family: "Karla", sans-serif;
+  font-family: "Karla", sans-serif;
 
-  }
+}
 
-  main{
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
-    
-    background-size: cover;
-  }
-  .card{
-    border-radius: 30px;
-    border: none;
-    width: 1000px;
-    height: 665px;
-  }
-  .login {
-   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-  }
-  .brand-wrapper {
-    margin-bottom: 19px;
-    display: flex;
-    align-items: center;
-   /* Vertically align items */
-    justify-content: space-between;
-   /* Mengaligner item secara horizontal dan memberi ruang di antara */
-  }
 
-  .input-group-text{
-    height: 40px;
-    border-radius: 30px;
-  }
-  .brand-wrapper .logo {
-    height: 37px;
-  }
-  .loginbtn1 {
-    left: 20px;
-    margin-left: 30px;
-    background: var(--color-secondary);
-    color: var(--color-primary);
-    width: 80px;
-    height: 45px;
-    border-radius: 100px;
-    padding: 10px;
-    white-space: nowrap;
-    transition: 0.3s;
-    font-size: 14px;
-    font-weight: 600;
-    border: 2px solid #cb9224;
-    align-items: center;
-  }
-  .akun p {
-    align-items: center;
-  }
-  .loginbtn2 {
-    left: 20px;
-    background: var(--color-secondary);
-    color: var(--color-primary);
-    width: 85px;
-    height: 45px;
-    border-radius: 100px;
-    padding: 10px;
-    transition: 0.3s;
-    font-size: 14px;
-    border: 2px solid #cb9224;
-  }
-  .loginbtn2 p {
-    margin-left: 12px;
-  }
-  .login-card-footer-text {
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-  .forgot-password-link {
-    margin-left: 15%;
-  }
-  .fo .login-card {
-    border: 0;
-    border-radius: 27.5px;
-    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
-    overflow: hidden;
-    width: auto;
-    height: 650px;
-  }
-  .login-card-img {
-    border-radius: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 30px;
-  }
-  .login-card .card-body {
-    padding: 20px 60px 60px;
-  }
-  @media (max-width: 422px) {
-    .login-card .card-body {
-      padding: 35px 24px;
-   }
-  }
-  .login-card-description {
-    color: #000;
-    font-weight: normal;
-    margin-bottom: 23px;
-  }
-  .login-card form {
-    max-width: 326px;
-  }
-  .login-card .form-control {
-    border: 1px solid #d5dae2;
-    padding: 15px 25px;
-    margin-bottom: 20px;
-    height: 40px;
-    font-size: 13px;
-    line-height: 15;
-    font-weight: normal;
-    border-radius: 30px;
-  }
+.wrapper-body {
+  max-width: 1300px;
+  position: static;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
 
-  .login-card .form-control::-webkit-input-placeholder {
-    color: #919aa3;
+
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+
+.signup {
+  width: 100%;
+  height: 100%;
+  background: url("../image/herlogin.png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.signup .card {
+  border-radius: 30px;
+  border: none;
+  /* width: 800px; */
+  height: auto;
+  margin-top: 60px;
+}
+
+.signup {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.signup .input-group-text {
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: var(--color-secondary);
+
+  background: #F5F5F5;
+}
+
+.signup .form-select {
+  padding: 15px 45px;
+  height: 62px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  border-radius: 30px;
+  background-color: #F5F5F5;
+  border: none;
+}
+
+.form-group .custom-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.lefts-icon {
+  position: absolute;
+  top: 37%;
+  transform: translateY(-50%);
+}
+
+.lefts-icon {
+  left: 13px;
+  /* top: 24px; */
+  padding: 5px;
+}
+
+
+.icon-input {
+  padding-left: 30px;
+  /* Adjust the padding to make space for the left icon */
+  padding-right: 30px;
+  /* Adjust the padding to make space for the right icon */
+}
+
+
+
+.akun p {
+  align-items: center;
+}
+
+.signupbtn2 {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  width: 85px;
+  height: 45px;
+  border-radius: 100px;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.signupbtn2 p {
+  margin-left: 12px;
+}
+
+.signup-card-footer-text {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.forgot-password-link {
+  margin-left: 15%;
+}
+
+
+.signup-card .card-body {
+  padding: 60px;
+}
+
+
+@media (max-width: 422px) {
+  .signup-card .card-body {
+    padding: 35px 24px;
   }
-  .login-card .form-control::-moz-placeholder {
-    color: #919aa3;
+}
+
+.signup-card-description {
+  color: #000;
+  font-weight: normal;
+}
+
+.signup-card form {
+  max-width: 326px;
+}
+
+.signup-card .form-control {
+  padding: 15px 45px;
+  border: none;
+  margin-bottom: 20px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 15;
+  font-weight: normal;
+  border-radius: 30px;
+  background: #F5F5F5;
+}
+
+
+.signup-card .form-control::-webkit-input-placeholder {
+  color: #919aa3;
+}
+
+.signup-card .form-control::-moz-placeholder {
+  color: #919aa3;
+}
+
+.signup-card .form-control:-ms-input-placeholder {
+  color: #919aa3;
+}
+
+.signup-card .form-control::-ms-input-placeholder {
+  color: #919aa3;
+}
+
+.signup-card .form-control::placeholder {
+  color: #919aa3;
+}
+
+.signup-card .signup-btn:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+
+.signup-card .forgot-password-link {
+  font-size: 14px;
+  color: #919aa3;
+  margin-bottom: 12px;
+}
+
+.signup-card-footer-text {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Mukta;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 767px) {
+  .signup-card-footer-text {
+    margin-bottom: 24px;
   }
-  .login-card .form-control:-ms-input-placeholder {
-    color: #919aa3;
-  }
-  .login-card .form-control::-ms-input-placeholder {
-    color: #919aa3;
-  }
-  .login-card .form-control::placeholder {
-    color: #919aa3;
-  }
-  .login-card .login-btn:hover {
-    border: 1px solid #000;
-    background-color: transparent;
-    color: #000;
-  }
-  .login-card .forgot-password-link {
-    font-size: 14px;
-    color: #919aa3;
-    margin-bottom: 12px;
-  }
-  .login-card-footer-text {
-    font-size: 16px;
-    color: #0d2366;
-    margin-bottom: 60px;
-  }
-  @media (max-width: 767px) {
-    .login-card-footer-text {
-      margin-bottom: 24px;
-   }
-  }
-  .login-card-footer-nav a {
-    font-size: 14px;
-    color: #919aa3;
-  }
-  .form-horizontal .form-group {
-    margin-bottom: 20px;
-   /* Adds space between form groups */
-  }
-  
-  input::-webkit-outer-spin-button,
+}
+
+.signup-card-footer-nav a {
+  font-size: 14px;
+  color: #919aa3;
+}
+
+
+
+
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.signup .masuk {
+  margin-top: 40px;
+}
+
+.card-body h3 {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+
+a {
+  color: var(--color-primary);
+}
+
+
+
+.text-resets1 {
+  color: var(--color-primary);
+  font-size: 15px;
+}
+
+
+
+
+.remember {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.signup label {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Mukta;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

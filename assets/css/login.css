@@ -6,185 +6,218 @@
 }
 
 body {
-    font-family: "Karla", sans-serif;
+  font-family: "Karla", sans-serif;
 
-  }
+}
 
-  main{
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
-    
-    background-size: cover;
-  }
 
-  body {
-    font-family: 'Mukta', sans-serif;
-  }
-  .card{
-    border-radius: 30px;
-    border: none;
-    width: 1000px;
-    height: 665px;
-    margin-left: 70px;
-  }
-  .login {
-   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-  }
-  .brand-wrapper {
-    margin-bottom: 19px;
-    display: flex;
-    align-items: center;
-   /* Vertically align items */
-    justify-content: space-between;
-   /* Mengaligner item secara horizontal dan memberi ruang di antara */
-  }
+.login {
+  width: 100%;
+  height: 100%;
+  background: url("../image/herlogin.png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
 
-  .input-group-text{
-    height: 50px;
-    border-radius: 30px;
-    background-color: white;
-  }
-  .brand-wrapper .logo {
-    height: 37px;
-  }
-  .loginbtn1 {
-    left: 20px;
-    margin-left: 30px;
-    background: var(--color-secondary);
-    color: var(--color-secondary);
-    width: 80px;
-    border-radius: 100px;
-    padding: 5px;
-    white-space: nowrap;
-    transition: 0.3s;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: var(--color-primary);
-    border: 2px solid #cb9224;
-    align-items: center;
-  }
-  .akun p {
-    align-items: center;
-  }
-  .loginbtn2 {
-    left: 20px;
-    background: var(--color-secondary);
-    color: var(--color-primary);
-    width: 85px;
-    height: 45px;
-    border-radius: 100px;
-    padding: 10px;
-    transition: 0.3s;
-    font-size: 14px;
-    border: 2px solid #cb9224;
-  }
-  .loginbtn2 p {
-    margin-left: 12px;
-  }
-  .login-card-footer-text {
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-  .forgot-password-link {
-    margin-left: 15%;
-  }
- 
-  .login-card-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: 30px;
-  }
+.wrapper-body {
+  max-width: 1300px;
+  position: static;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+.login .card {
+  border-radius: 30px;
+  border: none;
+  /* width: 500px; */
+  height: auto;
+  margin-top: 60px;
+}
+
+
+
+.login .input-group-text {
+  height: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: var(--color-secondary);
+
+  background: #F5F5F5;
+  border-left: 3px solid #F5F5F5;
+  border-top: 3px solid #F5F5F5;
+  border-bottom: 3px solid #F5F5F5;
+  border-right: 1px solid var(--color-secondary);
+
+}
+
+
+
+.login .loginbtn2 {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  width: 90px;
+  height: 50px;
+  border-radius: 100px;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.login .loginbtn2 p {
+  margin-left: 12px;
+}
+
+
+.forgot-password-link {
+  margin-left: 15%;
+}
+
+
+.login .login-card .card-body {
+  padding: 80px;
+}
+
+
+@media (max-width: 422px) {
   .login-card .card-body {
-    padding: 20px 60px 60px;
+    padding: 35px 24px;
   }
-  @media (max-width: 422px) {
-    .login-card .card-body {
-      padding: 35px 24px;
-   }
-  }
-  .login-card-description {
-    color: #000;
-    font-weight: normal;
-    margin-bottom: 23px;
-  }
-  .login-card form {
-    max-width: 326px;
-  }
-  .login-card .form-control {
-    border: 1px solid #d5dae2;
-    padding: 15px 25px;
-    margin-bottom: 20px;
-    height: 50px;
-    font-size: 13px;
-    line-height: 15;
-    font-weight: normal;
-    border-radius: 30px;
-  }
+}
 
-  .login-card .form-control::-webkit-input-placeholder {
-    color: #919aa3;
-  }
-  .login-card .form-control::-moz-placeholder {
-    color: #919aa3;
-  }
-  .login-card .form-control:-ms-input-placeholder {
-    color: #919aa3;
-  }
-  .login-card .form-control::-ms-input-placeholder {
-    color: #919aa3;
-  }
-  .login-card .form-control::placeholder {
-    color: #919aa3;
-  }
-  .login-card .login-btn:hover {
-    border: 1px solid #000;
-    background-color: transparent;
-    color: #000;
-  }
-  .login-card .forgot-password-link {
-    font-size: 14px;
-    color: #919aa3;
-    margin-bottom: 12px;
-  }
+.login-card-description {
+  color: #000;
+  font-weight: normal;
+  margin-bottom: 23px;
+}
+
+.login-card form {
+  max-width: 326px;
+}
+
+.login-card .form-control {
+  border: none;
+  margin-bottom: 20px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 15;
+  font-weight: normal;
+  border-radius: 30px;
+  background: #F5F5F5;
+}
+
+
+
+.login-card .form-control::-webkit-input-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control::-moz-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control:-ms-input-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control::-ms-input-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control::placeholder {
+  color: #919aa3;
+}
+
+.login-card .login-btn:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+
+.login-card .forgot-password-link {
+  font-size: 14px;
+  color: #919aa3;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
   .login-card-footer-text {
-    font-size: 15px;
-    color: #0d2366;
-    margin-bottom: 60px;
+    margin-bottom: 24px;
   }
-  @media (max-width: 767px) {
-    .login-card-footer-text {
-      margin-bottom: 24px;
-   }
-  }
-  .login-card-footer-nav a {
-    font-size: 14px;
-    color: #919aa3;
-  }
-  .form-horizontal .form-group {
-    margin-bottom: 20px;
-   /* Adds space between form groups */
-  }
+}
 
-  
-  
-  input::-webkit-outer-spin-button,
+.login-card-footer-nav a {
+  font-size: 14px;
+  color: #919aa3;
+}
+
+
+
+
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.masuk{
+.login .masuk {
   margin-top: 120px;
+
 }
 
-.card-body h3 {
+.login-card .card-body h3 {
   font-weight: bold;
+  color: var(--color-primary);
+}
+
+
+a {
+  color: var(--color-primary);
+}
+
+
+.login-card-footer-text {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Mukta;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.text-resets {
+  color: var(--color-primary);
+  margin-top: 10px;
+  margin-left: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.text-resets1 {
+  color: var(--color-primary);
+  font-size: 15px;
+}
+
+.labels {
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.ceklis {
+  color: var(--color-primary);
+}
+
+
+.remember {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
 }

@@ -1,16 +1,22 @@
  <section class="event-detail">
      <div class="wrapper-body">
-         <div class="row">
-             <div class="eventimg col-md-6">
-                 <img src="<?php echo base_url() ?>assets/image/information/image 54 (1).png" alt="">
+         <?php foreach ($detail_event as $d) { ?>
+             <div class="row">
+                 <div class="eventimg col-md-6">
+                     <img src="<?php echo base_url() ?>assets/image/information/image 54 (1).png" alt="">
+                 </div>
+                 <div class="col-md-6">
+                     <?php $now = date("Y-m-d");
+                        if ($now > $d->date_event) { ?>
+                         <p class="headerblog">Done</p>
+                     <?php  } else if ($now <= $d->date_event) { ?>
+                         <p class="headerblog">Coming</p>
+                     <?php }  ?></p>
+                     <h3 class="headerblog1"><?php echo $d->title; ?></h3>
+                     <h3 class="headerblog3 "><?php echo $d->date_event; ?></h3>
+                     <p class="headerblog2"><?php echo $d->description; ?></p>
+                 </div>
              </div>
-             <div class="col-md-6">
-                 <p class="headerblog">Upcoming</p>
-                 <h3 class="headerblog1">Lorem ipsum dolor sit amet, consectetur </h3>
-                 <h3 class="headerblog3 ">08 November 2023</h3>
-                 <p class="headerblog2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, ligula id semper pellentesque, orci magna maximus ligula, vel rhoncus purus enim nec ex. Fusce finibus velit metus, sit amet viverra lorem faucibus pulvinar. Suspendisse pretium dolor id sem efficitur, sed auctor ante elementum. Morbi rutrum venenatis massa, ac fringilla erat dignissim vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam non sapien varius, sagittis purus id, lobortis massa. Vivamus blandit eu lectus nec euismod. Praesent volutpat metus orci, in accumsan metus lobortis eu. Donec id odio luctus velit sagittis rhoncus. Sed at auctor leo. Vestibulum tempor odio rhoncus fermentum egestas.</p>
-                 <p class="headerblog2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, ligula id semper pellentesque, orci magna maximus ligula, vel rhoncus purus enim nec ex. Fusce finibus velit metus, sit amet viverra lorem faucibus pulvinar. Suspendisse pretium dolor id sem efficitur, sed auctor ante elementum. Morbi rutrum venenatis massa, ac fringilla erat dignissim vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam non sapien varius, sagittis purus id, lobortis massa. Vivamus blandit eu lectus nec euismod. Praesent volutpat metus orci, in accumsan metus lobortis eu. Donec id odio luctus velit sagittis rhoncus. Sed at auctor leo. Vestibulum tempor odio rhoncus fermentum egestas.</p>
-             </div>
-         </div>
+         <?php } ?>
      </div>
  </section>

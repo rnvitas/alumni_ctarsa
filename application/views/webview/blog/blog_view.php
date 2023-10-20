@@ -1,4 +1,4 @@
- <section class="galeryhead">
+ <section class="galeryhead-blog">
 
      <div class="blogtext wrapper-body text-center ">
          <h1>Blog</h1>
