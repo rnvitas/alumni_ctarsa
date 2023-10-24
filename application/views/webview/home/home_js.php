@@ -3,6 +3,24 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 <script>
+    // Add a click event listener to the button
+    var playButtons = document.querySelectorAll('.btn-play');
+    playButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Get the video URL from the data-video-src attribute
+            var videoSrc = this.getAttribute('data-video-src');
+
+            // Update the src attribute of the iframe with the video URL
+            document.getElementById('video').src = videoSrc;
+        });
+    });
+
+    // Add an event listener for when the modal is hidden to stop the video
+    $('#videoModal').on('hidden.bs.modal', function() {
+        document.getElementById('video').src = '';
+    });
+</script>
+<script>
     $(document).ready(function() {
 
 
@@ -16,6 +34,14 @@
             arrows: false,
             centerMode: true,
             variableWidth: true,
+        });
+
+        $(".timeline-content").mouseenter(function() {
+            $("#detail-2004").show();
+        });
+
+        $('.timeline-content').mouseleave(function() {
+            $('#detail-2004').hide();
         });
 
     });
@@ -61,7 +87,8 @@
     $(".donations").slick({
         slidesToShow: 3.2, // Number of slides to show initially
         slidesToScroll: 1,
-        dots: false,
+        initialSlide: 0,
+        infinite: false,
         speed: 300, // Number of slides to scroll at a time
         prevArrow: ".prevbutton", // Custom previous arrow button
         nextArrow: ".nextbutton", // Custom next arrow button
@@ -69,24 +96,34 @@
                 breakpoint: 1200, // Change settings for screens <= 1024px wide
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
                 },
             },
             {
                 breakpoint: 1008, // Change settings for screens <= 768px wide
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    initialSlide: 2,
                 },
             },
             {
                 breakpoint: 800, // Change settings for screens <= 768px wide
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    initialSlide: 0,
                 },
             },
             {
-                breakpoint: 320, // Change settings for screens <= 768px wide
+                breakpoint: 400, // Change settings for screens <= 768px wide
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
                 },
             },
         ],

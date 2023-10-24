@@ -55,8 +55,8 @@
                         </div>
                         <p><?php echo $d->description ?></p>
                         <div class="ineteraksi d-flex">
-                            <button type="button" class="btns btn btn-primary me-2"><i class="bi bi-book-half"></i>Baca</button>
-                            <button type="button" class="btns btn btn-primary"><i class="bi bi-download"></i>Unduh</button>
+                            <a type="button" class="btns btn btn-primary me-2" href="<?php echo base_url(); ?>repository/preview/?id=<?php echo $d->id ?>"><i class=" bi bi-book-half"></i>Baca</a>
+                            <button type="button" class="btns btn btn-primary" onclick="download(<?php echo $d->id ?>)"><i class="bi bi-download"></i>Unduh</button>
                             <!-- <button type="button" class="btn btn-primary"><i class="bi bi-printer"></i>Cetak</button>
                         <button type="button" class="btn btn-primary"><i class="bi bi-quote"></i>Kutip</button> -->
                         </div>
@@ -67,20 +67,20 @@
         </div>
     </div>
 
-    <div class="wrapper-body">
+    <div class="wrapper-body mb-5">
         <div class="bacajuga col-lg-12">
-            <div class="d-flex justify-content-between">
-                <p style="color:#cb9224; font-weight:700">Baca Juga</p>
-                <button type="button" class="btns btn btn-primary">lihat semua</button>
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 style="color:#cb9224; font-weight:700">Baca Juga</h5>
+                <a type="button" class=" btn btn-primary align-items-center" href="<?php echo base_url('repository') ?>">lihat semua</a>
             </div>
         </div>
-        <div class="readmore mt-3">
+        <div class="readmore mt-3 mb-5">
             <div class="d-flex justify-content-center slider-repo">
                 <?php foreach ($lainnya as $l) { ?>
-                    <div class="card-details ">
+                    <div class="card-details " onclick="showDetail(<?php echo $l->id ?>)">
                         <img src=" <?php echo base_url(); ?>./../../../uploadFile_alumni/repository/<?php echo $l->thumbnail_image; ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $l->title; ?> </h5>
+                            <h5 class="card-title-book"><?php echo $l->title; ?> </h5>
                             <p class="card-text"><?php echo $l->author; ?></p>
                             <p class="cardview">dirujuk <?php echo $l->count; ?> kali</p>
                         </div>
@@ -93,3 +93,21 @@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    function showDetail(id) {
+        alert(id);
+        url = "<?php echo base_url(); ?>repository/detail/?id=" + id,
+
+            window.location = url
+    }
+
+    function download() {
+        var a = document.createElement("a");
+        a.style = "display: none";
+        a.href = "data:application/pdf;base64," + id;
+        a.download = "download.pdf";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+</script>

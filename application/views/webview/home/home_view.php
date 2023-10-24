@@ -49,14 +49,33 @@
                 </div>
                 <div class="pt-5">
                     <button class="btn btn-follow-us mt-1 text-white" type="submit">Follow Us <span class="ms-2">-</span>
-                        <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="white" d="M13.028 2.001a78.82 78.82 0 0 1 2.189.022l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.154a4.908 4.908 0 0 1 1.153 1.771c.247.637.415 1.364.465 2.428c.012.266.022.488.03.712l.006.194a79 79 0 0 1 .023 2.188l.001.746v1.31a78.836 78.836 0 0 1-.023 2.189l-.006.194c-.008.224-.018.445-.03.712c-.05 1.064-.22 1.79-.466 2.427a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-.267.012-.488.022-.712.03l-.194.006a79 79 0 0 1-2.189.023l-.746.001h-1.309a78.836 78.836 0 0 1-2.189-.023l-.194-.006a60.64 60.64 0 0 1-.712-.03c-1.064-.05-1.79-.22-2.428-.466a4.89 4.89 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.427a74.367 74.367 0 0 1-.03-.712l-.005-.194A79.053 79.053 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.224.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.68a4.897 4.897 0 0 1 1.77-1.155c.638-.247 1.363-.415 2.428-.465l.712-.03l.194-.005A79.053 79.053 0 0 1 10.972 2h2.056Zm-1.028 5A5 5 0 1 0 12 17a5 5 0 0 0 0-10Zm0 2A3 3 0 1 1 12.001 15a3 3 0 0 1 0-6Zm5.25-3.5a1.25 1.25 0 0 0 0 2.498a1.25 1.25 0 0 0 0-2.5Z" />
+                        <svg class="mx-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                            <g fill="none">
+                                <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />
+                                <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60" />
+                                <path fill="#fff" d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604h.031Zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396c0 26.688-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413c0-26.704.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5c3.5-3.5 6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563v.025Zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12v.004Zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355c0 28.361 22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355h.002Zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334c-18.41 0-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334Z" />
+                                <defs>
+                                    <radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1" gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FD5" />
+                                        <stop offset=".1" stop-color="#FD5" />
+                                        <stop offset=".5" stop-color="#FF543E" />
+                                        <stop offset="1" stop-color="#C837AB" />
+                                    </radialGradient>
+                                    <radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1" gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3771C8" />
+                                        <stop offset=".128" stop-color="#3771C8" />
+                                        <stop offset="1" stop-color="#60F" stop-opacity="0" />
+                                    </radialGradient>
+                                </defs>
+                            </g>
                         </svg>
-                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="white" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+                        <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                            <path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.307 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.347-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.958 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445" />
+                            <path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165h29.825" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="white" d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z" />
+                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 180">
+                            <path fill="red" d="M250.346 28.075A32.18 32.18 0 0 0 227.69 5.418C207.824 0 127.87 0 127.87 0S47.912.164 28.046 5.582A32.18 32.18 0 0 0 5.39 28.24c-6.009 35.298-8.34 89.084.165 122.97a32.18 32.18 0 0 0 22.656 22.657c19.866 5.418 99.822 5.418 99.822 5.418s79.955 0 99.82-5.418a32.18 32.18 0 0 0 22.657-22.657c6.338-35.348 8.291-89.1-.164-123.134Z" />
+                            <path fill="#FFF" d="m102.421 128.06l66.328-38.418l-66.328-38.418z" />
                         </svg>
                     </button>
                 </div>
@@ -65,15 +84,17 @@
 </section><!-- End Hero -->
 
 <!-- Section About card -->
-<section class="aboutcards">
-    <div class="aboutcard container position-relative">
+<section class="aboutcards ">
+    <div class="aboutcard container position-relative " data-aos="zoom-in" data-aos-delay="100">
         <div class="selengkapnya">
             <div class="d-flex row align-content-between">
                 <div class="text col-md-6 ">
-                    <h3>Dengan bangga kami sampaikan</h3>
+                    <h3 data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">Dengan bangga kami sampaikan</h3>
                 </div>
-                <div class=" btn-about col-md-6 ml-10">
-                    <a href="#about" class="btn-get-about scrollto">Selengkapnya<i class="bi bi-chevron-right"></i></a>
+                <div class=" btn-about col-md-6 ml-10" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <button href="#about" class="btn btn-get-about scrollto">Selengkapnya<svg class="carets" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256">
+                            <path fill="currentColor" d="m180.24 132.24l-80 80a6 6 0 0 1-8.48-8.48L167.51 128L91.76 52.24a6 6 0 0 1 8.48-8.48l80 80a6 6 0 0 1 0 8.48Z" />
+                        </svg></button>
                 </div>
             </div>
         </div>
@@ -82,38 +103,38 @@
         </div> -->
         <div class="row">
             <div class="col-md-6 col-lg-3">
-                <div class="card cardabout">
+                <div class="card cardabout" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <h5 class="card-title">2</h5>
                     <p class="card-text">Sekolah</p>
                     <div class="hover-info">
-                        lihat lebih lanjut <i class="bi bi-caret-right"></i>
+                        <p>Sukoharjo dan Medan</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="card cardabout">
                     <h5 class="card-title">11</h5>
                     <p class="card-text">Angkatan</p>
                     <div class="hover-info">
-                        lihat lebih lanjut <i class="bi bi-caret-right"></i>
+                        <p>Akan Terus Bertambah</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="card cardabout">
                     <h5 class="card-title">300</h5>
                     <p class="card-text">Lulusan</p>
                     <div class="hover-info">
-                        lihat lebih lanjut <i class="bi bi-caret-right"></i>
+                        <p>Tersebar Ke Berbagai Perguruan Tinggi</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="card cardabout">
                     <h5 class="card-title text-light">142</h5>
                     <p class="card-text">Lulusan Unggulan</p>
                     <div class="hover-info">
-                        lihat lebih lanjut <i class="bi bi-caret-right"></i>
+                        <p>Jalur Undangan dan Universitas Luar Negeri</p>
                     </div>
                 </div>
             </div>
@@ -132,24 +153,15 @@
                 <div class="tab-pane active show" id="tab-1">
                     <div class="row">
                         <div class="col-lg-6  text-center" data-aos="fade-up" data-aos-delay="200">
-                            <img src="<?php echo base_url(); ?>assets/image/clients/WISUDA_SMAU.jpg" alt="" class="img-fluid" style="border-radius: 30px;">
+                            <img src="<?php echo base_url(); ?>assets/image/wisuda_smau.png" alt="" class="img-fluid" style="border-radius: 30px;">
                         </div>
-                        <div class="col-lg-6 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <div class="textall col-lg-6 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
                             <p class="texto">Tentang Platform</p>
-                            <h1>
+                            <h1 class="textr">
                                 APA ITU CTARSA ALUMNI?
                             </h1>
                             <p class="textp">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate nisl risus, et ornare lacus
-                                finibus sit amet. Fusce aliquam, orci at auctor placerat, ex nibh finibus nibh, sed scelerisque leo
-                                tellus et purus. Etiam elementum, lorem tempus suscipit pulvinar, mauris mi rutrum elit, in pulvinar
-                                lorem risus vitae nisl. Pellentesque imperdiet, massa sed suscipit convallis, massa nisl tincidunt
-                                eros, eu accumsan odio eros ut nisi.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate nisl risus, et ornare lacus
-                                finibus sit amet. Fusce aliquam, orci at auctor placerat, ex nibh finibus nibh, sed scelerisque leo
-                                tellus et purus. Etiam elementum, lorem tempus suscipit pulvinar, mauris mi rutrum elit, in pulvinar
-                                lorem risus vitae nisl. Pellentesque imperdiet, massa sed suscipit convallis, massa nisl tincidunt
-                                eros, eu accumsan odio eros ut nisi.
+                                Ikatan CTARSA Alumni adalah sebuah platform yang memiliki peran penting dalam menghubungkan para alumni. Melalui platform ini, alumni dapat saling terhubung dan berbagi berbagai informasi, pengalaman, dan kenangan mereka selama menjalani masa sekolah di CTARSA. Ini bukan hanya sekadar wadah, tetapi juga menjadi jembatan emosional yang memungkinkan para alumni merasakan nostalgia akan masa-masa indah mereka bersama. Mari jadikan wadah ini menjadi penuh dengan informasi yang bermanfaat.
                             </p>
                         </div>
                     </div>
@@ -173,54 +185,67 @@
             <div class="row">
                 <div class="col">
                     <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-                        <div class="timeline-step">
+                        <div class="timeline-step" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                                <div class="inner-circle"></div>
-                                <p class="h6 mt-3 mb-1">2005</p>
-                                <p class="h6 mb-0 mb-lg-0 text-light">Berawal dari Rumah Anak Madani (RAM) di Deli Serdang</p>
-                                <span class="popup" data-popuptext="ctarsa adalah sekolah terbaik sepanjang masa">Selengkapnya</span>
+                                <div class="bgtimeline"> <img src="<?php echo base_url(); ?>assets/image/2004.png" alt="" />
+                                </div>
+                                <p class="h6 mt-3 mb-1">2004</p>
+                                <p class="h6 mb-0 mb-lg-0 text-light">Bencana Tsunami melanda Nangroe Aceh Darussalam</p>
+                                <!-- <span class="popup" data-popuptext="ctarsa adalah sekolah terbaik sepanjang masa">Selengkapnya</span> -->
+                                <!-- <div id="detail-2004" style="display: none;">
+                                    <p>yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey</p>
+                                    <p>yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey</p>
+                                    <p>yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey</p>
+                                    <p>yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey</p>
+                                    <p>yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey yeyeyeyey</p>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="timeline-step">
+                        <div class="timeline-step" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
-                                <div class="inner-circle"></div>
-                                <p class="h6 mt-3 mb-1">2010</p>
-                                <p class="h6  mb-0 mb-lg-0 text-light">Dikembangkan menjadi SMA Unggulan CT ARSA Foundation</p>
-                                <span class="popup" data-popuptext="ctarsa adalah sekolah terbaik sepanjang masa">Selengkapnya</span>
-                            </div>
-                        </div>
-                        <div class="timeline-step">
-                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
-                                <div class="inner-circle"></div>
+                                <div class="bgtimeline"> <img src="<?php echo base_url(); ?>assets/image/2005.png" alt="" />
+                                </div>
                                 <p class="h6 mt-3 mb-1">2005</p>
-                                <p class="h6  mb-0 mb-lg-0 text-light">Launched Messanger</p>
+                                <p class="h6  mb-0 mb-lg-0 text-light">Didirikan Rumah Anak Madani di Deli Serdang</p>
                                 <span class="popup" data-popuptext="ctarsa adalah sekolah terbaik sepanjang masa">Selengkapnya</span>
                             </div>
                         </div>
-                        <div class="timeline-step">
-                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
-                                <div class="inner-circle"></div>
+                        <div class="timeline-step" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                                <div class="bgtimeline"> <img src="<?php echo base_url(); ?>assets/image/2010.png" alt="" />
+                                </div>
                                 <p class="h6 mt-3 mb-1">2010</p>
+                                <p class="h6  mb-0 mb-lg-0 text-light">Dikembangkan menjadi SMA Unggulan CT ARSA Foundations</p>
+                                <span class="popup" data-popuptext="ctarsa adalah sekolah terbaik sepanjang masa">Selengkapnya</span>
+                            </div>
+                        </div>
+                        <div class="timeline-step" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                                <div class="bgtimeline"> <img src="<?php echo base_url(); ?>assets/image/2015.png" alt="" />
+                                </div>
+                                <p class="h6 mt-3 mb-1">2015</p>
                                 <p class="h6 mb-0 mb-lg-0 text-light">Open New Branch</p>
                                 <span class="popup" data-popuptext="ctarsa adalah sekolah terbaik sepanjang masa">Selengkapnya</span>
                             </div>
                         </div>
-                        <div class="timeline-step mb-0">
+                        <div class="timeline-step mb-0" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                             <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
-                                <div class="inner-circle"></div>
-                                <p class="h6 mt-3 mb-1">2020</p>
-                                <p class="h6 mb-0 mb-lg-0 text-light">In Fortune 500</p>
+                                <div class="bgtimeline"> <img src="<?php echo base_url(); ?>assets/image/2018.png" alt="" />
+                                </div>
+                                <p class="h6 mt-3 mb-1">2018</p>
+                                <p class="h6 mb-0 mb-lg-0 text-light">Didirikan SMA Unggulan CT ARSA Foundation di Sukoharjo</p>
                                 <span class="popup" data-popuptext="ctarsa adalah sekolah terbaik sepanjang masa">Selengkapnya</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="aset2 justify-content-end">
+            <div class="aset2 d-flex justify-content-end mb-10">
                 <img src="<?php echo base_url(); ?>assets/image/Group 104.png" alt="">
             </div>
         </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- ======= TimelineSection ======= -->
 
     <!-- ======= Testimoni Section ======= -->
     <section id="testimoni" class="testimoni">
@@ -233,7 +258,14 @@
                 <div class="owl-carousel owl-carousel1 owl-theme">
                     <div>
                         <div class="card text-center">
-                            <img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="" />
+                            <div class="image-container">
+                                <div class="video">
+                                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/image/image_93.png" alt="" />
+                                    <button type="button" class="btn-play" data-bs-toggle="modal" data-video-src="https://www.youtube.com/embed/C8C5FUrQcdM?si=aHYsELKXmqXINK5B" data-bs-target="#videoModal">
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <h5>Ronne Galle <br /></h5>
                                 <p class="card-text">
@@ -245,7 +277,14 @@
                     </div>
                     <div>
                         <div class="card text-center">
-                            <img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="" />
+                            <div class="image-container">
+                                <div class="video">
+                                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/image/image_94.png" alt="" />
+                                    <button type="button" class="btn-play" data-bs-toggle="modal" data-video-src="https://www.youtube.com/embed/7Q8RTtdaeMM?si=RYH9OUpBSfL5RBtp" data-bs-target="#videoModal">
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <h5>Missy Limana<br /></h5>
                                 <p class="card-text">
@@ -257,7 +296,14 @@
                     </div>
                     <div>
                         <div class="card text-center">
-                            <img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="" />
+                            <div class="image-container">
+                                <div class="video">
+                                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/image/image_95.png" alt="" />
+                                    <button type="button" class="btn-play" data-bs-toggle="modal" data-video-src="https://www.youtube.com/embed/Dl_Kxmo6Bic?si=y7Tu5dvhvRx1vymE" data-bs-target="#videoModal">
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <h5>Martha Brown<br /></h5>
                                 <p class="card-text">
@@ -269,7 +315,14 @@
                     </div>
                     <div>
                         <div class="card text-center">
-                            <img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="" />
+                            <div class="image-container">
+                                <div class="video">
+                                    <img class="card-img-top" src="<?php echo base_url(); ?>assets/image/image_93.png" alt="" />
+                                    <button type="button" class="btn-play" data-bs-toggle="modal" data-video-src="https://www.youtube.com/embed/pfTi6bbTjHg?si=_o5woBBUePLA3Ooq" data-bs-target="#videoModal">
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <h5>Hanna Lisem<br /></h5>
                                 <p class="card-text">
@@ -280,9 +333,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-selengkapnya3">Lihat semua</button>
+                </div>
             </div>
+
         </div>
-    </section><!-- End of testimonial Section -->
+    </section>
+    <!-- End of testimonial Section -->
 
     <!-- quotes Section -->
     <section class="quotes">
@@ -300,17 +358,33 @@
             <div class="title-section">
                 <div class="col-lg-12 d-flex justify-content-between">
                     <div class="col-lg-6 ">
-                        <p>Information</p>
+                        <p class="textto">Information</p>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-end ">
                     </div>
                 </div>
-                <div class="col-lg-12 d-flex justify-content-between">
-                    <div class="col-lg-6 ">
-                        <h1>CARI INFORMASI DISINI</h1>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-end ">
-                        <button type="button" class="btn btn-primary" onclick="showPopuler()">Lihat Semua</button>
+                <div class="col-lg-12">
+                    <h1>CARI INFORMASI DISINI</h1>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 col-6 text-right">
+                            <button class="btn mb-3 mr-1 carousel-control-prevv" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                                    <path fill="currentColor" d="M168.49 199.51a12 12 0 0 1-17 17l-80-80a12 12 0 0 1 0-17l80-80a12 12 0 0 1 17 17L97 128Z" />
+                                </svg>
+                            </button>
+                            <button class="btn mb-3 carousel-control-nextt" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                                    <path fill="currentColor" d="m184.49 136.49l-80 80a12 12 0 0 1-17-17L159 128L87.51 56.49a12 12 0 1 1 17-17l80 80a12 12 0 0 1-.02 17Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="col-md-6 col-6 text-right">
+                            <button type="button" class="btn btn-selengkapnya">
+                                Semua Informasi<svg class="carets1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256">
+                                    <path fill="currentColor" d="m180.24 132.24l-80 80a6 6 0 0 1-8.48-8.48L167.51 128L91.76 52.24a6 6 0 0 1 8.48-8.48l80 80a6 6 0 0 1 0 8.48Z"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -431,12 +505,10 @@
                 <h2>SISIHKAN UNTUK DAPAT LEBIH</h2>
                 <p class="donasis">Kontribusi Anda akan membuka pintu untuk harapan, pendidikan, dan perubahan positif dalam kehidupan mereka yang membutuhkan.</p>
             </div>
-            <button class="prevbutton"><i class="bi bi-chevron-left"></i></button>
-            <button class="nextbutton"><i class="bi bi-chevron-right"></i></button>
             <div class="donations">
                 <div>
                     <div class="card mb-3">
-                        <div class="col-12 kegiatan d-flex justify-content-center">
+                        <div class="col-12 kegiatan d-flex justify-content-center align-items-center">
                             <p>Donasi Kegiatan</p>
                         </div>
                         <div class="row g-0">
@@ -456,7 +528,7 @@
                             <p>ex. Rp.50.100 / Rp.300.100</p>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <button class="btn-qris">
+                            <button type="button" class="btn btn-qris" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="<?php echo base_url(); ?>assets/image/image 47.png" alt="" />
                             </button>
                             <button class="btn-qris1">
@@ -499,7 +571,7 @@
                             <p>ex. Rp.50.100 / Rp.300.100</p>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <button class="btn-qris">
+                            <button type="button" class="btn btn-qris" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="<?php echo base_url(); ?>assets/image/image 47.png" alt="" />
                             </button>
                             <button class="btn-qris1">
@@ -542,7 +614,7 @@
                             <p>ex. Rp.50.100 / Rp.300.100</p>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <button class="btn-qris">
+                            <button type="button" class="btn btn-qris" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="<?php echo base_url(); ?>assets/image/image 47.png" alt="" />
                             </button>
                             <button class="btn-qris1">
@@ -585,7 +657,7 @@
                             <p>ex. Rp.50.100 / Rp.300.100</p>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <button class="btn-qris">
+                            <button type="button" class="btn btn-qris" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="<?php echo base_url(); ?>assets/image/image 47.png" alt="" />
                             </button>
                             <button class="btn-qris1">
@@ -628,7 +700,7 @@
                             <p>ex. Rp.50.100 / Rp.300.100</p>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <button class="btn-qris">
+                            <button type="button" class="btn btn-qris" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="<?php echo base_url(); ?>assets/image/image 47.png" alt="" />
                             </button>
                             <button class="btn-qris1">
@@ -671,7 +743,7 @@
                             <p>ex. Rp.50.100 / Rp.300.100</p>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <button class="btn-qris">
+                            <button type="button" class="btn btn-qris" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <img src="<?php echo base_url(); ?>assets/image/image 47.png" alt="" />
                             </button>
                             <button class="btn-qris1">
@@ -693,8 +765,45 @@
                     </div>
                 </div>
             </div>
+            <button class="prevbutton"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                    <path fill="currentColor" d="M165.66 202.34a8 8 0 0 1-11.32 11.32l-80-80a8 8 0 0 1 0-11.32l80-80a8 8 0 0 1 11.32 11.32L91.31 128Z" />
+                </svg>
+            </button>
+            <button class="nextbutton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                    <path fill="currentColor" d="m181.66 133.66l-80 80a8 8 0 0 1-11.32-11.32L164.69 128L90.34 53.66a8 8 0 0 1 11.32-11.32l80 80a8 8 0 0 1 0 11.32Z" />
+                </svg>
+            </button>
         </div>
     </section>
     <!-- End donation Section -->
+
+
+    <!-- Modal donation -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="<?php echo base_url(); ?>assets/image/image 21.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal testimoni -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>

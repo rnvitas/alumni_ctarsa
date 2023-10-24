@@ -35,6 +35,17 @@ class Repository extends CI_Controller
         $this->load->view('_parts/wrapper', $data);
         // $this->add_count($id);
     }
+
+    public function preview()
+    {
+        $id = $_GET['id'];
+        $data['detail'] = $this->repo->getRepository_by_id($id);
+        // $data['lainnya'] = $this->repo->getRepository_lainnya($id);
+
+        $data['content']     = 'webview/repository/repository_book_preview';
+        $data['content_js'] = 'webview/repository/repository_js';
+        $this->load->view('_parts/wrapper', $data);
+    }
     // public function save()
     // {
     //     $date = new DateTime('now', new DateTimeZone('Asia/Jakarta'));

@@ -128,7 +128,7 @@
 
                             <div class="col-md-8 d-flex justify-content-end">
                                 <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $row->id ?>">
-                                    <img class="image-alumni" src="<?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" alt="">
+                                    <img class="image-alumni" src="<?php echo base_url(); ?>uploads/information/<?php echo $row->image; ?>" alt="">
                                 </a>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                         <div class="carousel-items me-3" onclick="showDetail(<?php echo $row->id ?>)" style="cursor:pointer">
                             <div class="card">
                                 <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $row->id ?>">
-                                    <img src="<?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" class="card-img-top" alt="" />
+                                    <img src="<?php echo base_url(); ?>uploads/information/<?php echo $row->image; ?>" class="card-img-top" alt="" />
                                 </a>
                                 <div class="card-body ">
                                     <div class="d-flex justify-content-between">
@@ -215,7 +215,7 @@
                     <?php foreach ($terbaru as $t) { ?>
                         <div class="carousel-items me-3" onclick="showDetail(<?php echo $t->id ?>)" style="cursor:pointer">
                             <div class="card">
-                                <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>"><img src=" <?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                                <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $t->id ?>"><img src=" <?php echo base_url(); ?>uploads/information/<?php echo $row->image; ?>" class="card-img-top" alt="Hollywood Sign on The Hill" />
                                 </a>
                                 <div class="card-body ">
                                     <div class="d-flex justify-content-between">

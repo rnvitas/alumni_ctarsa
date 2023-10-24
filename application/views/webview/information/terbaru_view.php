@@ -136,7 +136,7 @@
 
                             <div class="col-md-8 d-flex justify-content-end">
                                 <a href="<?php echo base_url(); ?>Information/detail/?id=<?php echo $row->id ?>">
-                                    <img class="image-alumni" src="<?php echo base_url(); ?>uploads/information/<?php echo $row->thumbnail_image; ?>" alt="">
+                                    <img class="image-alumni" src="<?php echo base_url(); ?>uploads/information/<?php echo $row->image; ?>" alt="">
                                 </a>
                             </div>
                         </div>

@@ -43,9 +43,9 @@
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Terlama </a></li>
+                                <li><a class="dropdown-item" href="#">Sort by A-Z</a></li>
+                                <li><a class="dropdown-item" href="#">Sort by Z-A</a></li>
                             </ul>
                         </div>
                     </div>
